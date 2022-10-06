@@ -2,7 +2,7 @@ import React from 'react'
 
 const Chaloemkrung_Information = () => {
   return (
-    <div>Chaloemkrung_Information</div>
+    <div>Chaloemkrung_Information YOYO</div>
   )
 }
 
