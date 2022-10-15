@@ -2,7 +2,7 @@ import React from 'react'
 
 const Chaloemkrung = () => {
   return (
-    <div>Chaloemkrung</div>
+    <div>Chaloemkrung this page made by fwa !</div>
   )
 }
 
