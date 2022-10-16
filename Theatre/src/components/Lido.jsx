@@ -2,7 +2,7 @@ import React from 'react'
 
 const Lido = () => {
   return (
-    <div>Lido</div>
+    <div>Hello</div>
   )
 }
 
