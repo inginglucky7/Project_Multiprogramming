@@ -1,33 +1,29 @@
 import React from 'react';
-import './App.css';
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Navbar from './components/Navbar';
-import Hero from './components/Hero'
-import Scala from './components/Scala';
-import Chaloemkrung from './components/Chaloemkrung';
-import Lido from './components/Lido';
-import Chaloemthai from './components/Chaloemthai';
-import Promote from './components/Promote'
+import {Chaloemkrung, Chaloemthai, Footer, Hero, Lido, Navbar, Promote, Scala} from "./components";
+import styles from './style';
+
+const App = () => (
+   
+  <div className='w-full overflow-hidden'>
+    <div className={`flex justify-center ${styles.paddingX}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Navbar />
+      </div>
+    </div>
+
+    <div className={`${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Hero />
+      </div>
+    </div>
+
+    <div className={`${styles.flexCenter} xl:px-0 xl:w-full`}>
+      <img src="https://cdn.discordapp.com/attachments/1031263201763016704/1031330341950074910/4adc6e32ad68f46e.png" alt="Fah siam" />
+    </div>
 
 
-function App() {
-  const [count, setCount] = useState(0)
-  
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/navbar" element={<Navbar />} />
-        <Route path="/hero" element={<Hero />} />
-        <Route path="/scala" element={<Scala />} />
-        <Route path="/chaloemkrung" element={<Chaloemkrung />} />
-        <Route path="/lido" element={<Lido />} />
-        <Route path="/chaloemthai" element={<Chaloemthai />} />
-        <Route path="/promote" element={<Promote />} />
-      </Routes>
-    </BrowserRouter>
-  );
-};
+  </div>
+);
 
-export default App;
+export default App
