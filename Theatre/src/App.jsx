@@ -1,9 +1,4 @@
 import React from 'react';
-<<<<<<< Updated upstream
-=======
-// import './App.css';
-import { useState } from 'react';
->>>>>>> Stashed changes
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import {Chaloemkrung, Chaloemthai, Footer, Hero, Lido, Navbar, Promote, Scala} from "./components";
 import styles from './style';
