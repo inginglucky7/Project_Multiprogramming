@@ -1,0 +1,1 @@
+import logo_standalone from './logoแสตนด์อโลน.png';
