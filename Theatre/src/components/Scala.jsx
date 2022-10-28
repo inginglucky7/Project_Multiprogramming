@@ -11,7 +11,7 @@ import ScalaPopcornCeiling from '../img/Scala/Scala Popcorn Ceiling.png'
 import ScalaMenWPack from '../img/Scala/Scala Men with Pack.png'
 import ScalaEx from '../img/Scala/Scala Ex.png'
 
-const gScala = () => {
+const Scala = () => {
   return (
     <div className='body'> 
       <div className='flex justify-center xs:mx-16 sm:mx-8'>
