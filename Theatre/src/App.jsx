@@ -22,8 +22,8 @@ const App = () => (
       <img src="https://cdn.discordapp.com/attachments/1031263201763016704/1031330341950074910/4adc6e32ad68f46e.png" alt="Fah siam" />
     </div>
 
-    <div className={`${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
+    <div>
+      <div>
         <Scala />
       </div>
     </div>
