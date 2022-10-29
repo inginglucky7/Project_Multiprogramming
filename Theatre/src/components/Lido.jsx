@@ -46,7 +46,6 @@ const Lido = () => {
       
       <img id="ttlido" src={Texture} />
       <img id="ttlido1" src={Texture1} />
-      {/* <img id="ttlido2" src={Texture} /> */}
       <img id="building" src={BuildingLido} />
       {/* <img id="tablido" src={LidoTex}/>
       <img id="logo" src={LidoLogo}/> */}

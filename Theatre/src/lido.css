@@ -1,9 +1,17 @@
 
 
-html {
-  overflow-x: hidden;
-  }
 
+html{
+  overflow-x: hidden;
+}
+body{
+  position: relative;
+  overflow-x: hidden;
+  width: 100vw;
+}
+/* #wrapper{
+  width: 100vw;
+} */
 h1 {
   font-family: 'Bai Jamjuree',sans-serif;
   font-size: 50px;
@@ -280,7 +288,7 @@ h1 {
 #gobchai{
   margin-top: 202vw;
   position: absolute;
-  margin-left: -16vw;
+  margin-left: -23vw;
   /* max-width:100%; */
   width: 15%;
 }
@@ -301,21 +309,21 @@ h1 {
 #change1{
   margin-top: 292vw;
   position: absolute;
-  margin-left: -15vw;
+  margin-left: -25vw;
   /* max-width:100%; */
   width: 30%;
 }
 #change2{
   margin-top: 309vw;
   position: absolute;
-  margin-left: -15vw;
+  margin-left: -25vw;
   /* max-width:100%; */
   width: 35%;
 }
 #change3{
   margin-top: 332vw;
   position: absolute;
-  margin-left: -15vw;
+  margin-left: -25vw;
   /* max-width:100%; */
   width: 30%;
 }
@@ -402,7 +410,7 @@ h1 {
   }
   #gobchai{
     margin-top: 420vw;
-    margin-left: 0vw;
+    margin-left:0vw;
     width: 25%;
   }
   #vector-gray{
@@ -495,7 +503,7 @@ h1 {
   #camera{
     margin-top: 1280vw;
     margin-left: 22vw;
-    width: 30%;
+    width: 40%;
   }
 }
 
