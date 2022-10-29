@@ -1,5 +1,6 @@
 import React from 'react'
-
+import "../lido.css";
+import Film from '../img/Lido/flim-lido.png';
 const Chaloemkrung = () => {
   return (
     <div className='bg-[#F3EEE1] bg-[url("/img/Chaloemkrung/texture_bg_dot_clk.png")]'>

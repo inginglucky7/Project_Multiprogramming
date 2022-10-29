@@ -1,0 +1,523 @@
+
+
+html {
+  overflow-x: hidden;
+  }
+
+h1 {
+  font-family: 'Bai Jamjuree',sans-serif;
+  font-size: 50px;
+  color: white;
+}
+#topic{
+  position: absolute;
+  margin-top: 20vw; 
+  font-family: 'Bai Jamjuree',sans-serif;
+  padding-right: 27vw;
+  padding-left: 27vw;
+  line-height: 0.1em;
+  font-weight: 400;
+  width: 100%;
+}
+#topic-11{
+  font-family: 'Bai Jamjuree',sans-serif;
+  position: absolute;
+  text-align: left;
+  margin-left: 40vw;
+  color: white;
+  font-size: 4vw;
+  font-weight: 500;
+  line-height: 1.65vw;
+  width: 100%;
+
+} 
+#topic-12{
+  visibility: hidden;
+  font-family: 'Bai Jamjuree',sans-serif;
+  /* position: absolute; */
+  text-align: left;
+  /* margin-left: 0vw; */
+  margin-top: 640vw;
+  color: white;
+  font-size: 5vw;
+  font-weight: 500;
+  line-height: 1.65vw;
+  width: 100%;
+
+
+} 
+.topic-1{
+  margin-bottom: 2vw;
+  font-family: 'Bai Jamjuree',sans-serif;
+  font-size: 1.25vw;
+  line-height: 2.5em;
+  font-weight: 500;
+  width: 100%;
+}
+#topic-2{
+  margin-top: 300vw;
+  margin-left: 20vw;
+  position: absolute;
+  font-family: 'Bai Jamjuree',sans-serif;
+  font-size: 1.25vw;
+  line-height: 2.5em;
+  font-weight: 500;
+  width: 100%;
+}
+#topic-all{
+  font-family: 'Bai Jamjuree',sans-serif;
+  font-size: 1.25vw;
+  line-height: 2em;
+  font-weight: 500;
+}
+#topic-all-6,#topic-all-7,#topic-all-8{
+  font-family: 'Bai Jamjuree',sans-serif;
+  font-size: 5vw;
+  line-height: 2em;
+  font-weight: 500;
+}
+#text-1{
+  font-family: 'Bai Jamjuree',sans-serif;
+  position: absolute;
+  text-align: left;
+  padding-right: 27vw;
+  padding-left: 27vw;
+  margin-top: 22vw;
+  color: white;
+  font-weight: 300;
+  line-height: 1.5em;
+  width: 100%;
+
+}
+#text-11{
+  font-family: 'Bai Jamjuree',sans-serif;
+  position: absolute;
+  text-align: left;
+  margin-left: 40vw;
+  padding-right: 30vw; 
+  margin-top:35vw;
+  color: white;
+  font-weight: 300;
+  line-height: 1.5rem;
+  width: 100%;
+
+} 
+#text-2{
+  position: absolute;
+  font-family: 'Bai Jamjuree',sans-serif;
+  margin-top: 105vw;
+  color: rgb(35, 35, 35);
+  font-size: 1vw;
+  font-weight: 500;
+  line-height: 1.55em;
+} 
+#text-22{
+  visibility: hidden;
+  position: absolute;
+  font-family: 'Bai Jamjuree',sans-serif;
+  margin-top: 250vw;
+  color: rgb(35, 35, 35);
+  font-weight: 500;
+  line-height: 1.25em;
+}
+#text-3{
+  position: absolute;
+  font-family: 'Bai Jamjuree',sans-serif;
+  margin-top: 145vw;
+  margin-right: 40vw;
+  text-align: center;
+  color: rgb(35, 35, 35);
+  font-size: 1vw;
+  font-weight: 500;
+  line-height: 1.25em;
+} 
+
+
+#text-4{
+  position: absolute;
+  font-family: 'Bai Jamjuree',sans-serif;
+  margin-top: 215vw;
+  margin-left: 35vw;
+  color: rgb(35, 35, 35);
+  font-size: 1vw;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+#text-44{
+  visibility: hidden;
+}  
+#text-5{
+  background-color: #202020af;
+  position: absolute;
+  font-family: 'Bai Jamjuree',sans-serif;
+  margin-top: 245vw;
+  margin-left: 35vw;
+   padding: 3vw;
+   border-radius: 2vw;
+  color: rgb(255, 255, 255);
+  font-size: 1vw;
+  font-weight: 400;
+  line-height: 1.5em;
+} 
+#text-55{
+  visibility: hidden;
+} 
+#text-6{
+  position: absolute;
+  font-family: 'Bai Jamjuree',sans-serif;
+  margin-top: 302vw;
+  margin-left: 30vw;
+  color: rgb(35, 35, 35);
+  font-size: 1vw;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+#text-66,#text-77,#text-88{
+  visibility: hidden;
+  position: absolute;
+  font-family: 'Bai Jamjuree',sans-serif;
+  margin-left: 8vw;
+  color: rgb(35, 35, 35);
+  font-weight: 500;
+  line-height: 1.5em;
+}
+#text-7{
+  position: absolute;
+  font-family: 'Bai Jamjuree',sans-serif;
+  margin-top: 320vw;
+  margin-left: 32vw;
+  color: rgb(35, 35, 35);
+  font-size: 1vw;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+#text-8{
+  position: absolute;
+  font-family: 'Bai Jamjuree',sans-serif;
+  margin-top: 340vw;
+  margin-left: 35vw;
+  color: rgb(35, 35, 35);
+  font-size: 1vw;
+  font-weight: 500;
+  line-height: 1.5em;
+} 
+
+#brown{
+  position: absolute;
+  max-width:100%;
+}
+#camera{
+  position: absolute;
+  margin-top: 360vw;
+  margin-left: 35vw;
+  width: 20%;
+}
+#film{
+  position: absolute;
+  width:100%;
+  
+}
+#ttlido{
+  position: absolute;
+  margin-top: 10vw;
+  width:100%;
+}
+#ttlido1{
+  visibility: hidden;
+  margin-top: 10vw;
+  position: absolute;
+  width:100%;
+}
+#tablido{
+  width:100%;
+  margin-top: 80vw;
+  position: absolute;
+}
+#logo{
+  margin-top: 79.5vw; 
+  position: absolute; 
+  width:25%;
+}
+#lidologo{
+  margin-top: 75vw; 
+  position: absolute; 
+  width:100%;
+}
+#building{
+  margin-top: 138vw;
+  position: absolute;
+  width: 100%;
+}
+#vector-gray{
+  margin-top: 180vw;
+  position: absolute;
+  /* max-width:100%; */
+  width: 100%;
+}
+#vector-gray1{
+  visibility: hidden;
+}
+#people-lido{
+  margin-top: 232vw;
+  position: absolute;
+  /* max-width:100%; */
+  width: 100%;
+}
+#tape{
+  margin-top: 214vw;
+  position: absolute;
+  margin-left: -25vw;
+  /* max-width:100%; */
+  width: 50%;
+}
+#tape1{
+  margin-top: 278vw;
+  position: absolute;
+  margin-left: 35vw;
+  /* max-width:100%; */
+  width: 30%;
+}
+#gobchai{
+  margin-top: 202vw;
+  position: absolute;
+  margin-left: -16vw;
+  /* max-width:100%; */
+  width: 15%;
+}
+#people1{
+  margin-top: 274vw;
+  position: absolute;
+  margin-left: -22vw;
+  /* max-width:100%; */
+  width: 14%;
+}
+#people2{
+  margin-top: 274.5vw;
+  position: absolute;
+  margin-left: -5vw;
+  /* max-width:100%; */
+  width: 20%;
+}
+#change1{
+  margin-top: 292vw;
+  position: absolute;
+  margin-left: -15vw;
+  /* max-width:100%; */
+  width: 30%;
+}
+#change2{
+  margin-top: 309vw;
+  position: absolute;
+  margin-left: -15vw;
+  /* max-width:100%; */
+  width: 35%;
+}
+#change3{
+  margin-top: 332vw;
+  position: absolute;
+  margin-left: -15vw;
+  /* max-width:100%; */
+  width: 30%;
+}
+#lidologosemi{
+  position: absolute;
+  visibility: hidden;
+}
+#light-brown{
+  position: absolute;
+  visibility: hidden;
+}
+@media(min-width: 0px) and (max-width: 799px) {
+  #film{
+    margin-top: 77vw;
+  }
+  #lidologosemi{
+    visibility: visible;
+    scale: 100%;
+    margin-top: 165vw;
+  }
+  #lidologo{
+    visibility: hidden;
+  }
+  #brownup{
+    visibility: visible;
+  }
+  #text-22{
+    visibility: visible;
+    margin-left: 20vw;
+    padding-right: 13vw;
+    text-align: center;
+  }
+  #text-11{
+    margin-top: 35vw;
+    margin-left: 55vw;
+    padding-right: 49vw;
+    line-height: 1.25rem;
+  }
+  #topic-11{
+    margin-top: 30vw;
+    margin-left: 55vw;
+  }
+  #building{
+    margin-top: 350vw;
+    position: absolute;
+    /* max-width:100%; */
+    width: 100%;
+  }
+  #ttlido1{
+    visibility: visible;
+  }
+  #vector-gray{
+    margin-top: 250vw;
+  }
+  #text-33{
+    visibility: visible;
+    position: absolute;
+    font-family: 'Bai Jamjuree',sans-serif;
+    margin-top: 320vw;
+    margin-right: 0vw;
+    text-align: center;
+    color: rgb(35, 35, 35);
+    font-size: 3.75vw;
+    font-weight: 500;
+    line-height: 1.25em;
+  }
+  #text-3{
+    visibility: hidden;
+  }
+  #text-4{
+    visibility: hidden;
+  }
+  #text-44{
+    visibility: visible;
+    position: absolute;
+    font-family: 'Bai Jamjuree',sans-serif;
+    padding-right: 15vw;
+    margin-top: 465vw;
+    margin-left: 15vw;
+    color: rgb(35, 35, 35);
+    font-size: 3.75vw;
+    font-weight: 400;
+    line-height: 1.5em;
+  }
+  #gobchai{
+    margin-top: 420vw;
+    margin-left: 0vw;
+    width: 25%;
+  }
+  #vector-gray{
+    visibility: hidden;
+  }
+  #vector-gray1{
+    visibility: visible;
+    margin-top: 390vw;
+    position: absolute;
+    /* max-width:100%; */
+    width: 100%;
+  }
+  #people-lido{
+    margin-top: 550vw;
+  }
+  #people1{
+    margin-top: 592vw;
+  }
+  #people2{
+    margin-top: 592vw;
+  }
+  #tape{
+    margin-top: 532vw;
+  }
+  #tape1{
+    margin-top: 596vw;
+  }
+  #text-5,#topic-1,#text-6,#text-7,#text-8{
+    visibility: hidden;
+  }
+  #text-55{
+    visibility: visible;
+    position: absolute;
+    font-family: 'Bai Jamjuree',sans-serif;
+    margin-top: 650vw;
+    margin-left: 15vw;
+     padding-right: 15vw;
+     border-radius: 2vw;
+    color: rgb(255, 255, 255);
+    font-size: 3.75vw;
+    font-weight: 400;
+    line-height: 1.5em;
+  } 
+  #light-brown{
+    visibility: visible;
+    margin-top: 620vw;
+  }
+  #topic-2{
+    margin-top: 805vw;
+    font-size: 4.5vw;
+    margin-left: 80vw;
+  }
+  #change1{
+    margin-top: 800vw;
+    width: 100%;
+    margin-left: 3vw;
+  }
+  #change2{
+    margin-top: 950vw;
+    width: 100%;
+    margin-left: 3vw;
+  }
+  #change3{
+    margin-top: 1100vw;
+    width: 100%;
+    margin-left: 3vw;
+  }
+  #text-66{
+    visibility: visible;
+    margin-top: 880vw;
+    font-size: 3.75vw;
+  }
+  #text-77{
+    visibility: visible;
+    margin-top: 1020vw;
+    font-size: 3.75vw;
+    margin-left: 10vw;
+    padding-right: 12vw;
+  }
+  #text-88{
+    visibility: visible;
+    margin-top: 1180vw;
+    font-size: 3.75vw;
+    margin-left: 10vw;
+    padding-right: 12vw;
+  }
+  #topic-12{
+    visibility: visible;
+  }
+  #camera{
+    margin-top: 1280vw;
+    margin-left: 22vw;
+    width: 30%;
+  }
+}
+
+
+@media(min-width: 401px) and (max-width: 799px) {
+  #text-1,#topic{
+    padding-left: 25vw;
+    padding-right: 25vw;
+  }
+  #topic{
+    margin-top: 25vw;
+  }
+  #text-1{
+    margin-top: 30vw;
+  }
+}
+@media(min-width: 10px) and (max-width: 399px) {
+  #text-11{
+    line-height: 1.25rem;
+  }
+  #topic-11{
+    font-size: 5vw;
+  }
+}
+
