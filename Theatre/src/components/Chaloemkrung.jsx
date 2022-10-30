@@ -44,13 +44,13 @@ const Chaloemkrung = () => {
         </div>
         <img className='absolute bottom-0 right-0 w-2/5 max-w-sm translate-y-8 md:translate-y-16 z-10' src="/img/Chaloemkrung/tape.png" alt="" />
       </div>
-      <div className='relative flex items-center justify-center h-[60vh] '>
+      <div className='relative flex items-center justify-center h-[60vh]'>
         <img className='object-cover h-full' src="/img/Chaloemkrung/inside.png" alt="" />
         <img className='absolute z-10 w-14 -translate-x-20 translate-y-24' src="/img/Chaloemkrung/nangram1.png" alt="" />
         <img className='absolute z-10 w-14 translate-x-20 translate-y-24' src="/img/Chaloemkrung/nangram2.png" alt="" />
         <img className='absolute z-10 w-14 translate-y-24' src="/img/Chaloemkrung/nangramcenter.png" alt="" />
-        <img className='absolute z-10 w-24 translate-y-4 left-0 -translate-x-10' src="/img/Chaloemkrung/red_left.png" alt="" />
-        <img className='absolute z-10 w-24 translate-y-3 right-0 translate-x-14' src="/img/Chaloemkrung/red_right.png" alt="" />
+        <img className='absolute z-10 w-24 translate-y-4 -translate-x-48' src="/img/Chaloemkrung/red_left.png" alt="" />
+        <img className='absolute z-10 w-24 translate-y-3 translate-x-52' src="/img/Chaloemkrung/red_right.png" alt="" />
       </div>
     </div>
   )
