@@ -6,6 +6,7 @@ import Lido from "./Lido";
 import Navbar from "./Navbar";
 import Promote from "./Promote";
 import Scala from "./Scala";
+import Fahsiam from "./Fahsiam.jsx";
 
 export {
     Chaloemkrung,
@@ -15,5 +16,6 @@ export {
     Lido,
     Navbar,
     Promote,
-    Scala
+    Scala,
+    Fahsiam,
 }
