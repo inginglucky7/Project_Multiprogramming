@@ -3,16 +3,24 @@ import "../lido.css";
 import Film from '../img/Lido/flim-lido.png';
 const Chaloemkrung = () => {
   return (
-    <div className='bg-[#F3EEE1] bg-[url("/img/Chaloemkrung/texture_bg_dot_clk.png")]'>
-      <p className='text-center my-10 text-6xl'>ศาลาเฉลิมกรุง</p>
-      <p className='max-w-lg mx-auto text-center'>ความเป็นมาของศาลาเฉลิมกรุงเริ่มขึ้นตั้งแต่ก่อนการเปลี่ยนแปลงการปกครอง เมื่อพระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัว รัชกาลที่ 7 ทรงมีพระราชดำริให้จัดสร้างถาวรวัตุถุขนาดใหญ่ที่จะสามารถอำนวยประโยชน์ให้กับสาธารณชนได้เพื่อเป็นระลึกแห่งการเฉลิมฉลองที่
+    <div className='bg-[#F3EEE1] py-40 bg-[url("/img/Chaloemkrung/texture_bg_dot_clk.png")] -translate-y-10 text-xl'>
+      <img className='max-w-md w-4/5 lg:w-full lg:h-1/2 mx-auto'src="/img/Chaloemkrung/logoclk.png" alt="" />
+      <p className='max-w-lg w-1/2 mx-auto text-center'>ความเป็นมาของศาลาเฉลิมกรุงเริ่มขึ้นตั้งแต่ก่อนการเปลี่ยนแปลงการปกครอง เมื่อพระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัว รัชกาลที่ 7 ทรงมีพระราชดำริให้จัดสร้างถาวรวัตุถุขนาดใหญ่ที่จะสามารถอำนวยประโยชน์ให้กับสาธารณชนได้เพื่อเป็นระลึกแห่งการเฉลิมฉลองที่
         กรุงเทพมหานครจะมีอายุครบ 150 ปี ในพ.ศ. 2475</p>
-      <div className='flex justify-between mx-12 my-80'>
-        <p>ศาลาเฉลิมกรุงเป็นผลงานออกแบบสถาปัตยกรรมชิ้นแรก
-          ของหม่อมเจ้าสมัยเฉลิม กฤดากร </p>
-        <p>ศาลาเฉลิมกรุงเปิดฉายครั้งแรกเมื่อ
-          วันที่ 2 กรกฎาคม พ.ศ.2476</p>
+      <div className='flex my-32'>
+        <div className='w-2/5 flex justify-center items-center'>
+          <img className='w-1/2 ' src="/img/Chaloemkrung/jao.png" alt="" />
+        </div>
+        <div className='flex justify-between w-3/5 '>
+          <p>ศาลาเฉลิมกรุงเป็นผลงานออกแบบสถาปัตยกรรมชิ้นแรก
+            ของหม่อมเจ้าสมัยเฉลิม กฤดากร ตั้งแต่เมื่อสมัยกลับจากการศึกษาต่างประเทศมารับราชการ โดยลักษณะอาคารมีการผสมผสานของสถาปัตยกรรม
+ตะวันตกได้อย่างลงตัว </p>
+          {/* <p>ศาลาเฉลิมกรุงเปิดฉายครั้งแรกเมื่อ
+            วันที่ 2 กรกฎาคม พ.ศ.2476</p> */}
+        </div>
       </div>
+      <img src="/img/Chaloemkrung/building1.png" alt="" />
+      <img src="/img/Chaloemkrung/building2.png" alt="" />
       <div className='flex justify-end mx-12 my-32'>
         <p className='max-w-lg'>สถาปัตยกรรม
           ในแง่ของสถาปัตยกรรมอาคารศาลาเฉลิมกรุงเป็น
