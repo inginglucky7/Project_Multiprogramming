@@ -27,14 +27,7 @@ const App = () => (
             <Scala/>
         </div>
 
-
         <Chaloemkrung />
-
-        {/* <div className={`${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Chaloemkrung />
-      </div>
-    </div> */}
 
         <div className={`${styles.flexCenter}`}>
             <div className={`${styles.boxWidth}`}>
