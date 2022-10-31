@@ -3,7 +3,7 @@ import "../lido.css";
 import Film from '../img/Lido/flim-lido.png';
 const Chaloemkrung = () => {
   return (
-    <div className='bg-[#F3EEE1] pt-40 bg-[url("/img/Chaloemkrung/texture_bg_dot_clk.png")] text-xl'>
+    <div className='bg-[#F3EEE1] pt-10 bg-[url("/img/Chaloemkrung/texture_bg_dot_clk.png")] text-xl'>
       <img className='max-w-md w-4/5 lg:w-full lg:h-1/2 mx-auto' src="/img/Chaloemkrung/logoclk.png" alt="" />
       <p className='max-w-lg w-4/5 mx-auto text-center'>ความเป็นมาของศาลาเฉลิมกรุงเริ่มขึ้นตั้งแต่ก่อนการเปลี่ยนแปลงการปกครอง เมื่อพระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัว รัชกาลที่ 7 ทรงมีพระราชดำริให้จัดสร้างถาวรวัตุถุขนาดใหญ่ที่จะสามารถอำนวยประโยชน์ให้กับสาธารณชนได้เพื่อเป็นระลึกแห่งการเฉลิมฉลองที่
         กรุงเทพมหานครจะมีอายุครบ 150 ปี ในพ.ศ. 2475</p>
@@ -19,10 +19,18 @@ const Chaloemkrung = () => {
             วันที่ 2 กรกฎาคม พ.ศ.2476</p> */}
         </div>
       </div>
-      <img src="/img/Chaloemkrung/building1.png" alt="" />
-      <img src="/img/Chaloemkrung/building2.png" alt="" />
-      <div className='flex justify-end mx-12 my-32'>
-        <p className='max-w-lg'>สถาปัตยกรรม
+      <div className='relative h-[80vh] flex justify-center items-center'>
+        <img className='object-cover h-full' src="/img/Chaloemkrung/building1.png" alt="" />
+        <div className='absolute bg-[#D9D9D9] p-6 w-4/5 max-w-sm translate-y-24'>
+          <p>ศาลาเฉลิมกรุงเปิดฉายครั้งแรกเมื่อวันที่ 2 กรกฎาคม พ.ศ.2476</p>
+        </div>
+      </div>
+      <div className='relative flex justify-center h-[90vh]'>
+        <img className='object-cover h-full translate-x-0' src="/img/Chaloemkrung/building2.png" alt="" />
+        </div>
+      <div className='flex justify-end mx-12 my-32 flex-col gap-8'>
+        <p className='text-4xl'>สถาปัตยกรรม</p>
+        <p className='max-w-lg'>
           ในแง่ของสถาปัตยกรรมอาคารศาลาเฉลิมกรุงเป็น
           รูปแบบสากลสมัย International or Modern Style ตัวอาคารมีลักษณะเป็นรูปทรงสี่เหลี่ยมสูง
           ตระหง่าน มั่นคง ผึ่งผาย ตามสไตล์ตะวันตกในส่วน
@@ -44,13 +52,14 @@ const Chaloemkrung = () => {
         </div>
         <img className='absolute bottom-0 right-0 w-2/5 max-w-sm translate-y-8 md:translate-y-16 z-10' src="/img/Chaloemkrung/tape.png" alt="" />
       </div>
-      <div className='relative flex items-center justify-center h-[60vh]'>
-        <img className='object-cover h-full' src="/img/Chaloemkrung/inside.png" alt="" />
-        <img className='absolute z-10 w-14 -translate-x-20 translate-y-24' src="/img/Chaloemkrung/nangram1.png" alt="" />
-        <img className='absolute z-10 w-14 translate-x-20 translate-y-24' src="/img/Chaloemkrung/nangram2.png" alt="" />
-        <img className='absolute z-10 w-14 translate-y-24' src="/img/Chaloemkrung/nangramcenter.png" alt="" />
-        <img className='absolute z-10 w-24 translate-y-4 -translate-x-48' src="/img/Chaloemkrung/red_left.png" alt="" />
-        <img className='absolute z-10 w-24 translate-y-3 translate-x-52' src="/img/Chaloemkrung/red_right.png" alt="" />
+      <div className='relative flex items-center justify-center h-[55vh]'>
+        <img className='object-cover h-full' src="/img/Chaloemkrung/major2.png" alt="" />
+        {/* <img className='object-cover h-full' src="/img/Chaloemkrung/inside.png" alt="" /> */}
+        <img className='absolute z-10 w-14 -translate-x-20 translate-y-20' src="/img/Chaloemkrung/nangram1.png" alt="" />
+        <img className='absolute z-10 w-14 translate-x-20 translate-y-20' src="/img/Chaloemkrung/nangram2.png" alt="" />
+        <img className='absolute z-10 w-14 translate-y-20' src="/img/Chaloemkrung/nangramcenter.png" alt="" />
+        {/* <img className='absolute z-10 w-24 translate-y-4 -translate-x-48' src="/img/Chaloemkrung/red_left.png" alt="" />
+        <img className='absolute z-10 w-24 translate-y-3 translate-x-52' src="/img/Chaloemkrung/red_right.png" alt="" /> */}
       </div>
     </div>
   )
