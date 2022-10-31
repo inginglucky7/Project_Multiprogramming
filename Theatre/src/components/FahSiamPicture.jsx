@@ -17,7 +17,7 @@ const FahSiamPicture = () => {
         <div className={`${styles.flexCenter} flex-1 flex-col`}>
             <div className="z-10">
                 <img src="https://cdn.discordapp.com/attachments/1031263201763016704/1031330341950074910/4adc6e32ad68f46e.png"
-                     className="scale-[1.95] pt-32 xl:scale-100 xl:pt-0" alt="Fah siam"/>
+                     className="scale-[1.95] pt-32 md:scale-100 xl:scale-100 xl:pt-0" alt="Fah siam"/>
             </div>
 
             <img ref={el => {filmAnim = el}} src="https://cdn.discordapp.com/attachments/1031263201763016704/1035642824173031515/vt_.png" alt="film"
