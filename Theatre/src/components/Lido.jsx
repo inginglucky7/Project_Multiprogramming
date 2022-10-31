@@ -25,8 +25,10 @@ import Change3 from '../img/Lido/2561.png';
 import Camera from '../img/Lido/RedCam.png';
 
 
+
 const Lido = () => {
   return (
+    
     <div class="flex justify-center item-center xl:px-0 xl:w-full" id="wrapper">
       <p id="text-2" class="invisible md:visible md:text-[0.875vw] sm:visible sm:text-[1.8vw]">จุดเริ่มต้นของโรงภาพยนตร์ลิโด ตั้งบนทำเลกลางเมืองย่านสยามสแควร์<br></br>
         ทำให้พื้นที่โดยรอบมีความเจริญขึ้นอย่างรวดเร็วและกลายเป็นแหล่งวัยรุ่น<br></br>
@@ -155,5 +157,6 @@ const Lido = () => {
     </div>
   )
 }
-
+import * as LidoJava from '../../lido.js';
 export default Lido 
+
