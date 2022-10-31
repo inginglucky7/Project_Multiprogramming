@@ -7,7 +7,7 @@ const App = () => (
 
     <div className='w-full overflow-hidden'>
         <div className={`flex justify-center ${styles.paddingX}`}>
-            <div className={`xl:fixed ${styles.boxWidth}`}>
+            <div className={`xl:fixed xl:z-20 ${styles.boxWidth}`}>
                 <Navbar />
             </div>
         </div>

@@ -24,8 +24,6 @@ import Change2 from '../img/Lido/2536.png';
 import Change3 from '../img/Lido/2561.png';
 import Camera from '../img/Lido/RedCam.png';
 
-
-
 const Lido = () => {
   return (
     
