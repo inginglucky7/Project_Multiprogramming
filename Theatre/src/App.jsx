@@ -35,10 +35,8 @@ const App = () => (
             </div>
         </div>
 
-        <div className={`${styles.flexCenter}`}>
-            <div className={`${styles.boxWidth}`}>
-                <Chaloemthai />
-            </div>
+        <div className={`${styles.boxWidth}`}>
+            <Chaloemthai/>
         </div>
 
         <div className={`${styles.flexCenter}`}>

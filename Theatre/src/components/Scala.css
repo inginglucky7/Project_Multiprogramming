@@ -2,8 +2,9 @@
     background-color: #453e2f;
     width: 100vw;
 }
+
 .logo {
-    animation: blinker 1.5s infinite;
+    animation: blinker 2s infinite;
 }
 @keyframes blinker {
     0% { opacity: 0.5; }
@@ -14,6 +15,35 @@
     75% { opacity: 1; }
     100% { opacity: 0.75; }
   }
+.aura {
+    animation: auramove 5s linear infinite;
+}
+@keyframes auramove {
+    50% {transform: rotate(10deg);}
+}
+.popcorn {
+    animation: popcornmove 2s linear infinite;
+}
+@keyframes popcornmove {
+    25% {transform: rotate(-2deg);}
+    75% {transform: rotate(2deg);}
+}
+.lights {
+    animation: lightsmove 1.5s infinite;
+}
+@keyframes lightsmove {
+    10% { opacity: 1; }
+    20% { opacity: 0.25; }
+    30% { opacity: 1; }
+    40% { opacity: 0.75; }
+    50% { opacity: 1; }
+    60% { opacity: 0.5; }
+    70% { opacity: 0.75; }
+    80% { opacity: 0.25; }
+    90% { opacity: 1; }
+    1000% { opacity: 1; }
+  }
+
 #txt-01 {
     transform: translateY(50px);
     transition: 1s ease-in-out;
@@ -22,4 +52,11 @@
 #txt-01.active {
     transform: translateY(0px);
     opacity: 1;
+}
+#txt-02 {
+    transform: scale(0.5);
+    transition: 1s ease-in-out;
+}
+#txt-02.active {
+    transform: scale(1);
 }

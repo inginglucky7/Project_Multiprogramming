@@ -2,7 +2,6 @@ import React from 'react';
 import './Scala.css';
 import ScalaLogo from '../img/Scala/Scala Logo.png'
 import ScalaAura from '../img/Scala/Scala Aura.png'
-import ScalaContent from '../img/Scala/Scala Content.png'
 import ScalaCar from '../img/Scala/Scala Car.png'
 import ScalaBG from '../img/Scala/Scala BG.png'
 import ScalaJira from '../img/Scala/Scala Jira.png'
@@ -10,13 +9,23 @@ import ScalaInside from '../img/Scala/Scala Inside.png'
 import ScalaPopcornCeiling from '../img/Scala/Scala Popcorn Ceiling.png'
 import ScalaMenWPack from '../img/Scala/Scala Men with Pack.png'
 import ScalaEx from '../img/Scala/Scala Ex.png'
+import NewScala from '../img/Scala/New Scala Building.png'
+import Human1 from '../img/Scala/Human1.png'
+import Human2 from '../img/Scala/Human2.png'
+import Human3 from '../img/Scala/Human3.png'
+import BushWLight from '../img/Scala/Bush With Light.png'
+import Popcorn from '../img/Scala/Popcorn A.png'
+import InsideBG from '../img/Scala/Inside BG.png'
+import Lights from '../img/Scala/Lights.png'
+import Elip from '../img/Scala/Ellipse.png'
+import EBG from '../img/Scala/EBG.png'
 import * as ScalaJS from '../../scala';
 
 const Scala = () => {
   return (
     <div className='body'> 
       <div className='flex justify-center xs:mx-16 sm:mx-8'>
-        <img className='logo' src={ScalaLogo} alt="logo" />
+        <img className='logo sm:mt-60 xs:mt-40' src={ScalaLogo} alt="logo" />
       </div>
       <div className='flex justify-center text-center xs:mx-20 mt-32 mb-44 sm:my-20'>
         <p id='txt-01' className='text-white xs:text-base sm:text-xl'>ตำนาน “โรงภาพยนตร์สกาลา” ราชาโรงหนังแห่งสยามที่เป็นมากกว่าสถานที่ฉายหนัง <br />
@@ -26,9 +35,18 @@ const Scala = () => {
           วันที่ 31 ธันวาคม 2512</p></div>
       <div className='relative xs:mt-4 sm:mt-64'>
         <div id='txt-01' className='xs:hidden lg:block'><p className='text-white text-xl absolute left-1/2 top-28'>• สกาลาเปิดฉายครั้งแรกเมื่อ วันที่ 31 ธันวาคม 2512</p></div>
-        <div><img className='sm:scale-100 absolute xs:scale-150' src={ScalaAura} alt="aura" /></div>
-        <div><img className='sm:scale-100 absolute xs:scale-150' src={ScalaContent} alt="content" /></div>
+        <div><img className='aura sm:scale-100 absolute xs:scale-150' src={ScalaAura} alt="aura" /></div>
+        <div><img className='sm:scale-100 absolute xs:scale-150' src={NewScala} alt="newcontent" /></div>
+
+        <div><img className='sm:scale-100 absolute xs:scale-150' id='human1' src={Human1} alt="human" /></div>
+        <div><img className='sm:scale-100 absolute xs:scale-150' id='human2' src={Human2} alt="human" /></div>
+        <div><img className='sm:scale-100 absolute xs:scale-150' id='human3' src={Human3} alt="human" /></div>
+
+        <div><img className='sm:scale-100 absolute xs:scale-150' src={BushWLight} alt="bushwlight" /></div>
+
         <div><img className='sm:scale-100 absolute xs:scale-150' src={ScalaCar} alt="car" /></div>
+        <div><img className='lights sm:scale-100 absolute xs:scale-150' src={Lights} alt="lights" /></div>
+
         <div><img className='sm:scale-100 xs:scale-150' src={ScalaBG} alt="bg" /></div>
       </div>
 
@@ -94,7 +112,9 @@ const Scala = () => {
           </div>
           <div className='xs:block mt-16 sm:hidden'>
             <div className='flex justify-center items-center'>
-              <img className='scale-125' src={ScalaPopcornCeiling} alt="inside" />
+              <img className='scale-125 absolute' src={ScalaPopcornCeiling} alt="inside" />
+              <img className='scale-125 absolute' src={Popcorn} alt="popcorn" />
+              <img className='scale-125' src={InsideBG} alt="insidebg" />
             </div>
           </div>
         </div>
@@ -102,7 +122,9 @@ const Scala = () => {
         <div className='sm:box row-span-3 xs:box'>
           <div className='sm:block xs:hidden'>
             <div className='flex justify-center items-center'>
-              <img className='scale-100' src={ScalaPopcornCeiling} alt="inside" />
+              <img className='w-6/12 absolute' src={ScalaPopcornCeiling} alt="inside" />
+              <img className='popcorn w-6/12 absolute' src={Popcorn} alt="popcorn" />
+              <img className='scale-100' src={InsideBG} alt="insidebg" />
             </div>
           </div>
           <div className='xs:block sm:hidden mt-32'>
@@ -124,11 +146,15 @@ const Scala = () => {
       <div className='sm:grid sm:grid-cols-2 sm:grid-rows-1 gap-2 xs:grid xs:grid-cols-1 xs:grid-rows-2'>
 
         <div className='sm:box xs:box'>
-          <div id='txt-01' className='sm:block xs:hidden'>
-            <img className='mx-auto' src={ScalaMenWPack} alt="menwithpack" />
+          <div className='sm:block ml-60 xs:hidden'>
+            <img id='txt-02' className='scale-100 absolute' src={Elip} alt="elip" />
+            <img id='txt-01' className='scale-100 absolute' src={ScalaMenWPack} alt="menwithpack" />
+            <img className='scale-100' src={EBG} alt="ebg" />
           </div>
           <div className='xs:block sm:hidden'>
-            <img id='txt-01' className='mx-auto w-5/6' src={ScalaMenWPack} alt="menwithpack" />
+            <img id='txt-02' className='absolute' src={Elip} alt="elip" />
+            <img id='txt-01' className='absolute' src={ScalaMenWPack} alt="menwithpack" />
+            <img className='scale-100' src={EBG} alt="ebg" />
           </div>
         </div>
 
