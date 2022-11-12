@@ -5,6 +5,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
+
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 const Hero = () => {
@@ -67,9 +68,9 @@ const Hero = () => {
 
             </div>
 
-            <div>
+            <div className="relative">
                 <img src="https://cdn.discordapp.com/attachments/1031263201763016704/1031335920475045938/Group_70.png" alt="bird"
-                     className="xs:absolute xs:left-64 xs:right-0 xs:top-[21rem] xl:right-64 xl:h-[8.7rem] xl:w-[14.875rem] xl:left-[93.5rem] xl:top-[48rem]"/>
+                     className="absolute xs:left-64 xs:right-0 xs:top-[21rem] xl:right-64 xl:h-[8.7rem] xl:w-[14.875rem] xl:left-[93.5rem] xl:top-[48rem]"/>
             </div>
 
             <div className='flex flex-1 justify-center items-center'>
