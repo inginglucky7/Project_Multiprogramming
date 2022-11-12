@@ -25,7 +25,7 @@ const Scala = () => {
   return (
     <div className='body'> 
       <div className='flex justify-center xs:mx-16 sm:mx-8'>
-        <img className='logo sm:mt-60 xs:mt-40' src={ScalaLogo} alt="logo" />
+        <img id='txt-03' className='logo sm:mt-60 xs:mt-40' src={ScalaLogo} alt="logo" />
       </div>
       <div className='flex justify-center text-center xs:mx-20 mt-32 mb-44 sm:my-20'>
         <p id='txt-01' className='text-white xs:text-base sm:text-xl'>ตำนาน “โรงภาพยนตร์สกาลา” ราชาโรงหนังแห่งสยามที่เป็นมากกว่าสถานที่ฉายหนัง <br />

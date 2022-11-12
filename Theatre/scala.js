@@ -31,3 +31,20 @@ function reveal_txt02() {
     }
 }
 window.addEventListener("scroll", reveal_txt02);
+
+function reveal_txt03() {
+  var txt03 = document.querySelectorAll("#txt-03");
+
+  for (var i = 0; i < txt03.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = txt03[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        txt03[i].classList.add("active");
+      } else {
+        txt03[i].classList.remove("active");
+      }
+    }
+}
+window.addEventListener("scroll", reveal_txt03);

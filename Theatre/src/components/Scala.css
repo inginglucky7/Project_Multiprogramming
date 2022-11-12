@@ -60,3 +60,10 @@
 #txt-02.active {
     transform: scale(1);
 }
+#txt-03 {
+    transform: scale(0.1, 1);
+    transition: 1s ease-in-out;
+}
+#txt-03.active {
+    transform: scale(1, 1);
+}
