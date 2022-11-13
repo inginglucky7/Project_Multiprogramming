@@ -86,7 +86,6 @@ const Fahsiam = () => {
     return (
         <section id="fahsiam" className="flex md:flex-col flex-col">
             <div id="image-fahsiam">
-                <FahSiamPicture className={`z-10`}/>
 
                 <div className="mix-blend-difference">
                     <img src="https://cdn.discordapp.com/attachments/1031263201763016704/1031371918642782219/i.png"
