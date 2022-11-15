@@ -39,17 +39,14 @@ const App = () => (
             <Chaloemthai/>
         </div>
 
-        <div className={`${styles.flexCenter}`}>
-            <div className={`${styles.boxWidth}`}>
-                <Promote />
-            </div>
+        <div className={`${styles.boxWidth}`}>
+            <Promote />
         </div>
-
-        <div className={`${styles.flexCenter}`}>
-            <div className={`${styles.boxWidth}`}>
-                <Footer />
-            </div>
+        
+        <div className={`${styles.boxWidth}`}>
+            <Footer />
         </div>
+        
     </div>
 );
 
