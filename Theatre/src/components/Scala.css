@@ -56,9 +56,11 @@
 #txt-02 {
     transform: scale(0.5);
     transition: 1s ease-in-out;
+    opacity: 0;
 }
 #txt-02.active {
     transform: scale(1);
+    opacity: 1;
 }
 #txt-03 {
     transform: scale(0.1, 1);
@@ -66,4 +68,22 @@
 }
 #txt-03.active {
     transform: scale(1, 1);
+}
+#txt-04 {
+    transform: translateX(100px);
+    transition: 1s ease-in-out;
+    opacity: 0;
+}
+#txt-04.active {
+    transform: translateX(0px);
+    opacity: 1;
+}
+#txt-05 {
+    transform: translateX(-100px);
+    transition: 1s ease-in-out;
+    opacity: 0;
+}
+#txt-05.active {
+    transform: translateX(0px);
+    opacity: 1;
 }
