@@ -1,0 +1,46 @@
+.cha-xx {
+    transition: 1s ease-in-out;
+    opacity: 0;
+}
+.cha-xx.text {
+    transform: translateY(50px);
+}
+.cha-xx.title {
+    transform: translateY(-150px);
+}
+.cha-xx.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+#cha-announce{
+    animation: shake 3s infinite;
+}
+@keyframes shake {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    54% {
+        transform: rotateZ(0deg);
+    }
+    60% {
+        transform: rotateZ(10deg);
+    }
+    66% {
+        transform: rotateZ(-20deg);
+    }
+    72% {
+        transform: rotateZ(20deg);
+    }
+    78% {
+        transform: rotateZ(20deg);
+    }
+    84% {
+        transform: rotateZ(-20deg);
+    }
+    90% {
+        transform: rotateZ(20deg);
+    }
+    96% {
+        transform: rotateZ(0deg);
+    }
+}
