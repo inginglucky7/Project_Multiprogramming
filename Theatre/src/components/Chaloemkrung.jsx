@@ -4,10 +4,7 @@ const Chaloemkrung = () => {
   useEffect(() => {
     const cha_xx=document.querySelectorAll(".cha-xx")
     window.addEventListener("scroll", e => {
-      // console.log(cha_01.getBoundingClientRect().top)
-
       for (let cha_01 of cha_xx) {
-        console.log(cha_01)
         let windowHeight = window.innerHeight
         let elementTop = cha_01.getBoundingClientRect().top
         let elementVisible = 10
@@ -104,10 +101,10 @@ const Chaloemkrung = () => {
       {/* เวทีที่มีนางรำ */}
       <div className='relative flex items-center justify-center h-[55vh] md:h-full'>
         <img className='object-cover h-full' src="/img/Chaloemkrung/major2.png" alt="" />
-        <div className='absolute w-14 z-10 md:w-20 flex md:gap-20'>
-          <img className='' src="/img/Chaloemkrung/nangram1.png" alt="" />
-          <img className='' src="/img/Chaloemkrung/nangramcenter.png" alt="" />
-          <img className='' src="/img/Chaloemkrung/nangram2.png" alt="" />
+        <div className='absolute z-10 flex lg:gap-20 nangrum-wraper md:gap-14'>
+          <img className='w-14 lg:w-24 nangrum1' src="/img/Chaloemkrung/nangram1.png" alt="" />
+          <img className='w-14 lg:w-24 nangrum2' src="/img/Chaloemkrung/nangramcenter.png" alt="" />
+          <img className='w-14 lg:w-24 nangrum3' src="/img/Chaloemkrung/nangram2.png" alt="" />
         </div>
       </div>
     </div>
