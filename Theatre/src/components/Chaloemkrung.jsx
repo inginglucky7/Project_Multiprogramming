@@ -86,7 +86,7 @@ const Chaloemkrung = () => {
 
       {/* ลำโพงประกาศ */}
       <div className='bg-[#3A352A] w-full h-screen flex justify-center items-center relative md:h-full'>
-        <img className='object-cover mix-blend-difference h-full w-full' src="/img/Chaloemkrung/rotate90.png" alt="" />
+        <img className='object-cover mix-blend-difference h-full w-full sket1' src="/img/Chaloemkrung/rotate90.png" alt="" />
         <div className="absolute flex flex-col md:flex-row w-4/5 md:mx-auto z-10">
           <div className='flex justify-center items-center w-full'>
             <img src="/img/Chaloemkrung/anounce.png" alt="" id='cha-announce' />

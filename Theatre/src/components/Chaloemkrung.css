@@ -67,7 +67,7 @@
     60% {
         transform: rotateZ(10deg);
     }
-    1000% {
+    100% {
         transform: rotateZ(0deg);
     }
 }
@@ -84,7 +84,7 @@
     60% {
         transform: rotateZ(5deg);
     }
-    1000% {
+    100% {
         transform: rotateZ(0deg);
     }
 }
@@ -101,7 +101,18 @@
     60% {
         transform: rotateZ(-10deg);
     }
-    1000% {
+    100% {
         transform: rotateZ(0deg);
+    }
+}
+.sket1{
+    animation: opa1 1.5s infinite alternate;
+}
+@keyframes opa1 {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
     }
 }
