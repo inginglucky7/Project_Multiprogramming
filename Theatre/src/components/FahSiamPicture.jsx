@@ -18,12 +18,10 @@ const FahSiamPicture = () => {
     
     return (
         <section id="FahsiamHero" className="xs:bg-red-300 sm:bg-yellow-300 md:bg-green-300 lg:bg-blue-300 xl:bg-pink-300">
-            <div className="mt-12 max-w-[100%] max-h-[100%] relative mx-auto">
-                <div id="container" className="relative max-w-full max-h-full h-auto">
-                    <div className="absolute flex scale-[.5] left-[-40vw] z-10">
-                        <img ref={el => {filmAnim = el}} className="" src={Film} alt="Film"/>
-                        <img ref={el => {slateAnim = el}} className="" src={Slate} alt="Slate"/>
-                    </div>
+            <div className="mt-12 max-w-[100%] max-h-[100%] h-full mx-auto">
+                <div id="container" className="relative">
+                    <img ref={el => {filmAnim = el}} className="absolute xs:w-[300px] scale-[.8] xs:right-[40vw] xs:top-[-42vw] m-0 m-auto z-0" src={Film} alt="Film"/>
+                    <img ref={el => {slateAnim = el}} className="absolute" src={Slate} alt="Slate"/>
                 </div>
 
                 <div className="relative z-0">

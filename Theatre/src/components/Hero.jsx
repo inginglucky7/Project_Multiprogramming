@@ -79,8 +79,6 @@ const Hero = () => {
                 <ArrowDownwardIcon className='w-[30px] h-[27px] object-contain' />
             </div>
 
-            <FahSiamPicture className={`z-10`}/>
-
         </section>
     )
 }
