@@ -20,8 +20,20 @@ const FahSiamPicture = () => {
         <section id="FahsiamHero" className="xs:bg-red-300 sm:bg-yellow-300 md:bg-green-300 lg:bg-blue-300 xl:bg-pink-300">
             <div className="mt-12 max-w-[100%] max-h-[100%] h-full mx-auto">
                 <div id="container" className="relative">
-                    <img ref={el => {filmAnim = el}} className="absolute xs:w-[300px] scale-[.8] xs:right-[40vw] xs:top-[-42vw] m-0 m-auto z-0" src={Film} alt="Film"/>
-                    <img ref={el => {slateAnim = el}} className="absolute" src={Slate} alt="Slate"/>
+                    <img ref={el => {filmAnim = el}} className="absolute xs:w-[300px]
+                    xs:right-[40vw] xs:top-[-42vw] xs:scale-[.8]
+                    sm:right-[31vw] sm:top-[-9vw] sm:scale-[.6]
+                    md:right-[48vw] md:top-[9vw] md:scale-[1]
+                    lg:right-[55vw] lg:top-[16vw] lg:scale-[1.25]
+                    xl:right-[59vw] xl:top-[19vw] xl:scale-[1.5]
+                    m-0 m-auto z-0" src={Film} alt="Film"/>
+                    <img ref={el => {slateAnim = el}} className="absolute xs:w-[300px]
+                    xs:left-[43vw] xs:top-[-39vw] xs:scale-[.5]
+                    sm:left-[34vw] sm:top-[-4vw] sm:scale-[.4]
+                    md:left-[52vw] md:top-[10vw] md:scale-[.8]
+                    lg:left-[58vw] lg:top-[16.5vw] lg:scale-[1]
+                    xl:left-[61vw] xl:top-[19.5vw] xl:scale-[1.25]
+                    m-0 m-auto z-0" src={Slate} alt="Slate"/>
                 </div>
 
                 <div className="relative z-0">
