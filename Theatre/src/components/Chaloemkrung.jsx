@@ -48,7 +48,7 @@ const Chaloemkrung = () => {
         </div>
         <img className='object-cover h-full' src="/img/Chaloemkrung/bd1.png" alt="" />
         <div className='absolute bg-[#D9D9D9] p-6 w-4/5 max-w-sm translate-y-24 lg:bg-transparent lg:right-20 lg:translate-y-0 lg:top-72'>
-          <p className='cha-xx text'>ศาลาเฉลิมกรุงเปิดฉายครั้งแรกเมื่อวันที่ 2 กรกฎาคม พ.ศ.2476</p>
+          <p className='cha-xx text'>• ศาลาเฉลิมกรุงเปิดฉายครั้งแรกเมื่อวันที่ 2 กรกฎาคม พ.ศ.2476</p>
         </div>
       </div>
       <div className="relative z-10 -translate-y-40 ">
@@ -59,7 +59,7 @@ const Chaloemkrung = () => {
       <div className="flex flex-col items-center">
         <div className='relative flex justify-center h-[90vh] items-center lg:h-full'>
           <img className='object-cover h-full translate-x-0' src="/img/Chaloemkrung/bd2.png" alt="" />
-          <div className='lg:flex justify-end flex-col gap-8 absolute right-10 -translate-y-44 hidden max-w-sm'>
+          <div className='lg:flex justify-end flex-col gap-8 absolute right-10 -translate-y-24 hidden max-w-sm'>
             <p className='text-4xl cha-xx text'>สถาปัตยกรรม</p>
             <p className='max-w-lg cha-xx text'>
               ในแง่ของสถาปัตยกรรมอาคารศาลาเฉลิมกรุงเป็น
