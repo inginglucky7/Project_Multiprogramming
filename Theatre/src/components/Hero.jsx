@@ -64,7 +64,7 @@ const Hero = () => {
             <div className="relative max-w-full max-h-full h-auto">
                 <img src="https://cdn.discordapp.com/attachments/1031263201763016704/1031335920475045938/Group_70.png" alt="bird"
                      className="absolute xs:scale-[0.7] xs:w-40 xs:bottom-10 xs:left-[65vw] sm:left-[68vw] md:scale-[1] md:left-[70vw]
-                     lg:left-[72vw] xl:scale-[1.25] xl:top-0 xl:left-[130vh] z-20"/>
+                     lg:left-[72vw] xl:scale-[1.25] xl:bottom-[-4vh] xl:left-[130vh] z-20"/>
             </div>
 
             <div ref={el => {infoHero = el}} className={`flex-1 flex flex-col opacity-0 justify-between items-center w-full mb-6 xl:mb-10 ${styles.flexCenter} px-6`}>
