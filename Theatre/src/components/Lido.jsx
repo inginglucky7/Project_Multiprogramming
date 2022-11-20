@@ -1,5 +1,5 @@
 import React from 'react'
-import "../lido.css";
+import "../css/lido.css";
 import BrownCurve from '../img/Lido/browncurve.svg';
 import BrownCurveMobile from '../img/Lido/browncurve-mobile.svg';
 import Film from '../img/Lido/film.svg';
@@ -155,6 +155,6 @@ const Lido = () => {
     </div>
   )
 }
-import * as LidoJava from '../../lido.js';
+import * as LidoJava from '../js/lido.js';
 export default Lido 
 

@@ -10,7 +10,7 @@ import PMRedCar from '../img/Promote/PMRedCar.png'
 import PMWatch from '../img/Promote/PMWatch.png'
 import PMWallet from '../img/Promote/PMWallet.png'
 import PMText2 from '../img/Promote/PMTXT2.png'
-import * as ScalaJS from '../../scala';
+import * as ScalaJS from '../js/scala.js';
 
 const Promote = () => {
   return (

@@ -19,7 +19,7 @@ import InsideBG from '../img/Scala/Inside BG.png'
 import Lights from '../img/Scala/Lights.png'
 import Elip from '../img/Scala/Ellipse.png'
 import EBG from '../img/Scala/EBG.png'
-import * as ScalaJS from '../../scala';
+import * as ScalaJS from '../js/scala.js';
 
 const Scala = () => {
   return (

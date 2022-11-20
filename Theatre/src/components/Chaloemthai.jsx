@@ -17,7 +17,7 @@ import CLTPaperTxt from '../img/Chaloemthai/CLTPaperTxt.png'
 import CLTTPBG from '../img/Chaloemthai/CLTTPBG.png'
 import CLTTP from '../img/Chaloemthai/CLTTP.png'
 import CLTXSPaper from '../img/Chaloemthai/PaperTxt.png'
-import * as ScalaJS from '../../scala';
+import * as ScalaJS from '../js/scala.js';
 
 const Chaloemthai = () => {
   return (
