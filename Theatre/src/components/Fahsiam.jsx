@@ -16,6 +16,7 @@ const Fahsiam = () => {
     let soldierRef1 = useRef(null);
     let soldierRef2 = useRef(null);
     let soldierRef3 = useRef(null);
+
     useEffect(()=> {
         gsap.to(
             turningPointRef, 1,{
@@ -69,12 +70,12 @@ const Fahsiam = () => {
             x: 400,
             ease: "inOut"
         });
-        gsap.to(soldierRef1, 5, {
+        gsap.to(soldierRef1, 2, {
             scrollTrigger: {
                 trigger: soldierRef1,
                 scrub: 1,
             },
-            x: 500,
+            x: "20vw",
             ease: "inOut"
         });
         gsap.to(soldierRef2, 5, {
@@ -82,7 +83,7 @@ const Fahsiam = () => {
                 trigger: soldierRef2,
                 scrub: 1,
             },
-            x: 200,
+            x: "10vw",
             ease: "inOut"
         });
         gsap.to(soldierRef3, 5, {
@@ -111,20 +112,23 @@ const Fahsiam = () => {
                 <div id="airplane_container" className="max-w-[100%] max-h-[100%] h-auto mx-auto">
                     <div className="relative">
                         <img ref={el => {airplane1Ref = el}} src="https://cdn.discordapp.com/attachments/1031263201763016704/1036627864428236901/1.png"
-                             className="absolute h-auto w-[100%]
-                             xs:max-w-[36vw] xs:bottom-[46vw] xs:left-[5vw]
-                             xl:bottom-[37vw] xl:pl-[5vw] xl:max-w-[36vw]" alt="airplane1Xl"/>
+                             className="absolute h-auto w-[100%] max-w-[36vw]
+                             xs:bottom-[46vw] xs:left-[5vw]
+                             sm:bottom-[34vw]
+                             xl:bottom-[37vw] xl:pl-[5vw] " alt="airplane1Xl"/>
                         <img src="https://cdn.discordapp.com/attachments/1031263201763016704/1036627863983636550/2.png"
                              className="absolute h-auto w-[100%] max-w-[36vw]
                              xs:bottom-[34vw] xs:left-[14vw]
+                             sm:bottom-[26vw]
                              xl:bottom-[28vw] xl:pl-[12vw] xl:left-0" alt="airplane2Xl"/>
                     </div>
                 </div>
 
                 <div className="sm:max-w-[100%] max-h-[100%] h-auto w-[100%] mx-auto sm:mb-0 xs:max-w-sm">
                     <div className="relative">
-                        <h2 ref={el => {turningPointRef = el}} className={`${styles.heading3Fahsiam} opacity-0 xs:relative sm:absolute
+                        <h2 ref={el => {turningPointRef = el}} className={`${styles.heading3Fahsiam} opacity-0 xs:relative
                         xs:pl-[10vw] xs:bottom-[14vw]
+                        sm:
                         xl:pl-[40vw] xl:bottom-[60vh]`}>จุดเปลี่ยน</h2>
                         <p ref={el => {turningPointInfoRef1 = el}} className={`${styles.paragraph} opacity-0 xs:relative sm:absolute
                         xs:pl-[0%] xs:mx-[10%] xs:bottom-[5vw]
@@ -144,18 +148,31 @@ const Fahsiam = () => {
                     </div>
                 </div>
 
-                <div className="xs:bottom-0 sm:pb-[60rem] max-w-[100%] h-full w-[100%]">
-                    <div className="relative max-w-[100%] h-full w-[100%] mb-20">
+                <div className="xs:bottom-0 sm:pb-[70vw] max-w-[100%] h-full w-[100%]">
+                    <div className="relative max-w-[100%] h-full w-[100%]">
                         <img src="https://cdn.discordapp.com/attachments/1031263201763016704/1031371918131073055/1651bf59ec5b8680.png"
-                             className="mix-blend-multiply absolute sm:flex z-[0]  xl:-top-80 max-w-[100%] h-auto w-[100%]" alt="ruin"/>
+                             className="mix-blend-multiply relative sm:flex z-[0]
+                             sm:bottom-[14vw]
+                             xl:bottom-[14vw] max-w-[100%] h-auto w-[100%]" alt="ruin"/>
                         <img ref={el => {soldierRef1 = el}} src="https://cdn.discordapp.com/attachments/1031263201763016704/1036676987571404811/2_1.png"
-                             className="sm:block z-[1] sm:absolute pt-[22%] pl-[22%] xs:hidden sm:max-w-[42%] h-auto w-[100%]" alt="soldier1"/>
+                             className="z-[1] absolute max-w-[42%] h-auto w-[100%]
+                             xs:pl-[6%] xs:top-[29vw] xs:left-[20vw]
+
+                             xl:pt-[22%] xl:pl-[22%] xl:top-[0vw] xl:left-[0vw]" alt="soldier1"/>
                         <img ref={el => {soldierRef2 = el}} src="https://cdn.discordapp.com/attachments/1031263201763016704/1036676988011823124/3.png"
-                             className="sm:block z-[1] sm:absolute pt-[15%] pl-[16%] xs:hidden sm:max-w-[38%] h-auto w-[100%]" alt="soldier2"/>
+                             className="absolute z-[1] max-w-[38%] h-auto w-[100%]
+                             xs:top-[22vw] xs:left-[0vw]
+                             sm:block
+                             xl:pt-[15%] xl:pl-[16%] xl:top-[0vw] xl:left-[0vw]" alt="soldier2"/>
                         <img ref={el => {soldierRef3 = el}} src="https://cdn.discordapp.com/attachments/1031263201763016704/1036677029833220096/1_1.png"
-                             className="sm:absolute pl-[57%] pt-[22%] max-w-[100%] h-auto w-auto" alt="soldier3"/>
+                             className="z-[1] max-w-[73vw] h-auto w-[100%]
+                             xs:hidden
+                             sm:absolute sm:block
+                             xl:pl-[57%] xl:" alt="soldier3"/>
                         <img src="https://cdn.discordapp.com/attachments/1031263201763016704/1036676987214909560/1.png"
-                             className="z-[2] xs:absolute xs:pt-[7vw]  sm:pt-[37vw] max-w-[100%] h-auto w-[100%]" alt="tearedPaper"/>
+                             className="z-[2] xs:absolute xs:top-[58vw]
+                             sm:pt-[37vw]
+                             max-w-[100%] h-auto w-[100%]" alt="tearedPaper"/>
                     </div>
                 </div>
             </div>

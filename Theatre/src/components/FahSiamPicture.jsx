@@ -17,7 +17,7 @@ const FahSiamPicture = () => {
 
     
     return (
-        <section id="FahsiamHero" className="xs:bg-red-300 sm:bg-yellow-300 md:bg-green-300 lg:bg-blue-300 xl:bg-pink-300">
+        <section id="FahsiamHero" className="sm:bg-yellow-300 md:bg-green-300 lg:bg-blue-300 xl:bg-pink-300">
             <div className="max-w-[100%] max-h-[100%] h-auto w-auto">
                 <div id="container" className="relative">
                     <img ref={el => {filmAnim = el}} className="absolute xs:w-[300px] max-w-[100%] w-[100%] h-auto
