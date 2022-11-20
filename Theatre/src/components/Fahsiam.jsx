@@ -119,28 +119,39 @@ const Fahsiam = () => {
                         <img src="https://cdn.discordapp.com/attachments/1031263201763016704/1036627863983636550/2.png"
                              className="absolute h-auto w-[100%] max-w-[36vw]
                              xs:bottom-[34vw] xs:left-[14vw]
-                             sm:bottom-[26vw]
+                             sm:bottom-[30vw]
+                             md:block md:bottom-[27vw]
+                             lg:bottom-[24vw]
                              xl:bottom-[28vw] xl:pl-[12vw] xl:left-0" alt="airplane2Xl"/>
                     </div>
                 </div>
 
-                <div className="sm:max-w-[100%] max-h-[100%] h-auto w-[100%] mx-auto sm:mb-0 xs:max-w-sm">
+                <div className="sm:max-w-xl md:max-w-[100%] max-h-[100%] h-auto w-[100%] mx-auto sm:mb-0 xs:max-w-sm">
                     <div className="relative">
                         <h2 ref={el => {turningPointRef = el}} className={`${styles.heading3Fahsiam} opacity-0 xs:relative
                         xs:pl-[10vw] xs:bottom-[14vw]
-                        sm:
-                        xl:pl-[40vw] xl:bottom-[60vh]`}>จุดเปลี่ยน</h2>
-                        <p ref={el => {turningPointInfoRef1 = el}} className={`${styles.paragraph} opacity-0 xs:relative sm:absolute
-                        xs:pl-[0%] xs:mx-[10%] xs:bottom-[5vw]
-                        xl:pl-[20%] xl:bottom-[47vh] xl:mx-[20%]`}>การยุติลงของสงครามโลกครั้งที่ 2 ใน พ.ศ. 2488 นอกจากจะเป็นจุดหมายสำคัญในทางการเมืองและ
+                        sm:bottom-[18vw]
+                        md:bottom-[18vw]
+                        xl:pl-[40vw] xl:bottom-[29.5vw]`}>จุดเปลี่ยน</h2>
+                        <p ref={el => {turningPointInfoRef1 = el}} className={`${styles.paragraph} opacity-0 z-10 xs:relative sm:absolute
+                        xs:pl-[0%] xs:mx-[10%] xs:bottom-[5vw] 
+                        sm:bottom-[45vw] sm:pl-[1vw]
+                        md:bottom-[6vw] md:pl-[0vw]
+                        lg:bottom-[12vw]
+                        xl:pl-[20%] xl:bottom-[23vw] xl:mx-[20%]`}>การยุติลงของสงครามโลกครั้งที่ 2 ใน พ.ศ. 2488 นอกจากจะเป็นจุดหมายสำคัญในทางการเมืองและ
                             ความสัมพันธ์ระหว่างประเทศแล้ว การสิ้นสุดสงครามครั้งนี้ยังมีความสำคัญต่อมิติทางสังคมและ วัฒนธรรมอีกด้วย
                         </p>
-                        <p ref={el => {turningPointInfoRef2 = el}} className={`${styles.paragraph} opacity-0 absolute top-0
-                        xs:hidden sm:block
-                        xl:pl-[44.5vw] xl:pt-10`}>ในวงการภาพยนตร์ไทยเมื่อสงครามอุบัติขึ้นทำให้กิจการฉายภาพยนตร์เข้าสู่ภาวะชะงักงันและซบเซา<br/>
-                            แต่เมื่อภัยสงครามได้จบสิ้นลงในวงการภาพยนตร์ก็กลับมาฟื้นคืนชีพอีกครั้งรวมถึงเกิดความเปลี่ยนแปลง<br/>
+                        <p ref={el => {turningPointInfoRef2 = el}} className={`${styles.paragraph} opacity-0 absolute top-0 z-10
+                        xs:hidden
+                        md:block md:pl-[2vw] md:mx-[8vw] md:top-[15vw]
+                        lg:pl-[2vw] lg:top-[15vw]
+                        xl:pl-[36vw] xl:mx-[8vw] xl:top-[0vw] xl:pt-10`}>ในวงการภาพยนตร์ไทยเมื่อสงครามอุบัติขึ้นทำให้กิจการฉายภาพยนตร์เข้าสู่ภาวะชะงักงันและซบเซา<br/>
+                            แต่เมื่อภัยสงครามได้จบสิ้นลงในวงการภาพยนตร์ก็กลับมาฟื้นคืนชีพอีกครั้งรวมถึงเกิดความเปลี่ยนแปลง<br className="md:hidden lg:block"/>
                             อันพลิกโฉมหน้าของกิจการภาพยนตร์ก็มาพร้อมกับทศวรรษใหม่ที่ตามมา</p>
-                        <p ref={el => {turningPointInfoRef3 = el}} className={`${styles.paragraph} xs:relative bottom-[22vw] sm:hidden mx-10 pt-40`}>
+                        <p ref={el => {turningPointInfoRef3 = el}} className={`${styles.paragraph} 
+                        xs:relative xs:bottom-[22vw] xs:mx-10 xs:pt-40
+                        sm:bottom-[12vw] sm:pl-[4vw] z-1
+                        md:hidden`}>
                             ในวงการภาพยนตร์ไทยเมื่อสงครามอุบัติขึ้นทำให้กิจการฉายภาพยนตร์เข้าสู่ภาวะชะงักงันและซบเซา<br/>
                             แต่เมื่อภัยสงครามได้จบสิ้นลงในวงการภาพยนตร์ก็กลับมาฟื้นคืนชีพอีกครั้งรวมถึงเกิดความเปลี่ยนแปลง
                             อันพลิกโฉมหน้าของกิจการภาพยนตร์ก็มาพร้อมกับทศวรรษใหม่ที่ตามมา
@@ -148,31 +159,42 @@ const Fahsiam = () => {
                     </div>
                 </div>
 
-                <div className="xs:bottom-0 sm:pb-[70vw] max-w-[100%] h-full w-[100%]">
-                    <div className="relative max-w-[100%] h-full w-[100%]">
+                <div className="xs:bottom-0 sm:pb-[55vw] md:pb-[20vw] xl:pb-[50vw] max-w-[100%] h-full w-[100%]">
+                    <div className="relative max-w-[100%] h-auto w-[100%]">
                         <img src="https://cdn.discordapp.com/attachments/1031263201763016704/1031371918131073055/1651bf59ec5b8680.png"
-                             className="mix-blend-multiply relative sm:flex z-[0]
-                             sm:bottom-[14vw]
-                             xl:bottom-[14vw] max-w-[100%] h-auto w-[100%]" alt="ruin"/>
+                             className="mix-blend-multiply sm:absolute md:relative sm:flex z-[0]
+                             sm:bottom-[-54vw]
+                             md:bottom-[-20vw]
+                             xl:absolute
+                             xl:bottom-[-55vw] max-w-[100%] h-auto w-[100%]" alt="ruin"/>
                         <img ref={el => {soldierRef1 = el}} src="https://cdn.discordapp.com/attachments/1031263201763016704/1036676987571404811/2_1.png"
                              className="z-[1] absolute max-w-[42%] h-auto w-[100%]
                              xs:pl-[6%] xs:top-[29vw] xs:left-[20vw]
-
+                             sm:top-[16vw]
+                             md:top-[50vw]
+                             lg:top-[50vw]
                              xl:pt-[22%] xl:pl-[22%] xl:top-[0vw] xl:left-[0vw]" alt="soldier1"/>
                         <img ref={el => {soldierRef2 = el}} src="https://cdn.discordapp.com/attachments/1031263201763016704/1036676988011823124/3.png"
                              className="absolute z-[1] max-w-[38%] h-auto w-[100%]
                              xs:top-[22vw] xs:left-[0vw]
-                             sm:block
+                             sm:block sm:top-[16vw]
+                             md:top-[50vw]
+                             lg:top-[40vw]
                              xl:pt-[15%] xl:pl-[16%] xl:top-[0vw] xl:left-[0vw]" alt="soldier2"/>
                         <img ref={el => {soldierRef3 = el}} src="https://cdn.discordapp.com/attachments/1031263201763016704/1036677029833220096/1_1.png"
-                             className="z-[1] max-w-[73vw] h-auto w-[100%]
+                             className="z-[1] max-w-[73vw] h-auto w-[100%] absolute
                              xs:hidden
-                             sm:absolute sm:block
+                             sm:hidden
+                             md:hidden
+                             lg:hidden
+                             xl:block xl:top-[23vw]
                              xl:pl-[57%] xl:" alt="soldier3"/>
                         <img src="https://cdn.discordapp.com/attachments/1031263201763016704/1036676987214909560/1.png"
-                             className="z-[2] xs:absolute xs:top-[58vw]
-                             sm:pt-[37vw]
-                             max-w-[100%] h-auto w-[100%]" alt="tearedPaper"/>
+                             className="z-[2] absolute xs:top-[58vw]
+                             sm:top-[43vw]
+                             md:top-[78vw]
+                             xl:top-[40vw]
+                             xl:max-w-[100%] h-auto w-[100%]" alt="tearedPaper"/>
                     </div>
                 </div>
             </div>
