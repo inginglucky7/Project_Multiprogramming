@@ -64,10 +64,10 @@ const Hero = () => {
             <div className="relative max-w-full max-h-full h-auto">
                 <img src="https://cdn.discordapp.com/attachments/1031263201763016704/1031335920475045938/Group_70.png" alt="bird"
                      className="absolute xs:scale-[0.7] xs:w-40 xs:bottom-10 xs:left-[65vw] sm:left-[68vw] md:scale-[1] md:left-[70vw]
-                     lg:left-[72vw] xl:scale-[1.25] xl:bottom-[-4vh] xl:left-[130vh] z-20"/>
+                     lg:left-[72vw] xl:scale-[1.25] xl:bottom-[-4vh] xl:left-[165vh] z-20"/>
             </div>
 
-            <div ref={el => {infoHero = el}} className={`flex-1 flex flex-col opacity-0 justify-between items-center w-full mb-6 xl:mb-10 ${styles.flexCenter} px-6`}>
+            <div ref={el => {infoHero = el}} className={`flex-1 flex flex-col opacity-0 justify-between items-center w-full xs:mb-0 mb-6 xl:mb-10 ${styles.flexCenter} px-6`}>
                 <p className={`${styles.paragraph} text-center text-lg`}>ครั้งหนึ่งเมื่อ 50-70 ปีที่แล้ว โรงภาพยนตร์แบบสแตนด์อโลน หรือโรงหนังเดี่ยวที่ตั้งอยู่โดด ๆ เคยได้รับความนิยมอย่างมาก </p>
                 <br/>
                 <p className={`${styles.paragraph} text-center text-lg`}>ก่อนที่วันเวลาและความเจริญก้าวหน้าของเทคโนโลยีจะพาโรงภาพยนตร์แบบมัลติเพล็กซ์สุดทันสมัยที่พร้อมด้วยสิ่งอำนวย<br/>
@@ -76,7 +76,7 @@ const Hero = () => {
             </div>
 
             <div className='flex flex-1 justify-center items-center'>
-                <ArrowDownwardIcon className='w-[30px] h-[27px] object-contain' />
+                <ArrowDownwardIcon className='w-[30px] h-[27px] object-contain xs:mb-24 sm:mb-0' />
             </div>
 
         </section>
