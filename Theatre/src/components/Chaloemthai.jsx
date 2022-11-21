@@ -59,7 +59,7 @@ const Chaloemthai = () => {
       {/* <div>
         <img src={CLTPaper} alt="paper" />
       </div> */}
-      <div className='flex justify-center mt-40'>
+      <div id="chaloemthai" className='flex justify-center mt-40'>
         <img id='txt-03' className='sm:-mt-30 xs:mt-12' src={CLTLogo} alt="logo" />
       </div>
       <div className='sm:my-0 xs:my-20'>

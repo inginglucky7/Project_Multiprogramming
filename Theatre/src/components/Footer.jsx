@@ -116,7 +116,7 @@ const Footer = () => {
   return (
       <section className="flex flex-col bg-[#3a352a] xs:pt-[80vw] sm:pt-[25vw]">
           <div id="footer">
-              <div className="max-w-[100%] max-h-[100%] h-auto w-[100vw] mx-auto">
+              <div id="ending" className="max-w-[100%] max-h-[100%] h-auto w-[100vw] mx-auto">
                   <div id="FahSiam_ending" className="relative">
                       <p ref={el => {textFooter = el}} id="textFull" className="xs:hidden xl:block relative
                        top-[15vw] text-[#ffffff] justify-center text-center opacity-0">"สถานที่ที่ให้อารมณ์ความรู้สึก และพบเจอเหตุการ์ณมากมาย <br/>

@@ -16,7 +16,7 @@ export const navLinks = [
         title: "ศาลาเฉลิมกรุง",
     },
     {
-        id: "lido",
+        id: "text-2",
         title: "ลิโด้",
     },
     {
