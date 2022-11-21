@@ -87,3 +87,10 @@
     transform: translateX(0px);
     opacity: 1;
 }
+
+.btnc {
+    cursor: pointer;
+}
+.btnc:hover {
+    opacity: 0.75;
+}
