@@ -463,7 +463,7 @@ h1 {
     padding-right: 13vw;
     text-align: center;
     transform: translateY(1vw);
-    transition: 2.25s ease-in-out;
+    transition: 0.75s ease-in-out;
     opacity: 0;
   } 
   #text-22.active{
@@ -504,7 +504,7 @@ h1 {
     font-weight: 500;
     line-height: 1.25em;
     opacity: 0;
-    transition: 1s ease-in-out;
+    transition: 0.5s ease-in-out;
     transform: translateX(-0.5vw);
   } 
   #text-33.active{
@@ -684,6 +684,9 @@ h1 {
   }
   #camera{
     margin-top: 1310vw;
+  }
+  #film{
+    margin-top: 77vw;
   }
 }
 
