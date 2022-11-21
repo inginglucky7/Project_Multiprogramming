@@ -196,7 +196,7 @@ h1 {
   margin-left: 30vw;
   color: rgb(35, 35, 35);
   font-size: 1vw;
-  font-weight: 500;
+  /* font-weight: 500; */
   line-height: 1.5em;
   transform: translateY(1vw);
   transition: 1s ease-in-out;
@@ -212,7 +212,7 @@ h1 {
   font-family: 'Bai Jamjuree',sans-serif;
   margin-left: 8vw;
   color: rgb(35, 35, 35);
-  font-weight: 500;
+  /* font-weight: 500; */
   line-height: 1.5em;
   transform: translateY(1vw);
   transition: 1s ease-in-out;
@@ -229,7 +229,7 @@ h1 {
   margin-left: 32vw;
   color: rgb(35, 35, 35);
   font-size: 1vw;
-  font-weight: 500;
+  /* font-weight: 500; */
   line-height: 1.5em;
   transform: translateY(1vw);
   transition: 1s ease-in-out;
@@ -246,7 +246,7 @@ h1 {
   margin-left: 35vw;
   color: rgb(35, 35, 35);
   font-size: 1vw;
-  font-weight: 500;
+  /* font-weight: 500; */
   line-height: 1.5em;
   transform: translateY(1vw);
   transition: 1s ease-in-out;
