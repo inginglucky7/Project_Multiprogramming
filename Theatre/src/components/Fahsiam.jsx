@@ -67,7 +67,7 @@ const Fahsiam = () => {
                 trigger: airplane1Ref,
                 scrub: 1,
             },
-            x: 400,
+            x: 500,
             ease: "inOut"
         });
         gsap.to(soldierRef1, 2, {
@@ -128,7 +128,7 @@ const Fahsiam = () => {
 
                 <div className="sm:max-w-xl md:max-w-[100%] max-h-[100%] h-auto w-[100%] mx-auto sm:mb-0 xs:max-w-sm">
                     <div className="relative">
-                        <h2 ref={el => {turningPointRef = el}} className={`${styles.heading3Fahsiam} opacity-0 xs:relative
+                        <h2 id="turning_point" ref={el => {turningPointRef = el}} className={`${styles.heading3Fahsiam} opacity-0 xs:relative
                         xs:pl-[10vw] xs:bottom-[14vw]
                         sm:bottom-[18vw]
                         md:bottom-[18vw]

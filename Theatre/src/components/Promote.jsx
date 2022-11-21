@@ -1,6 +1,7 @@
-import React from 'react'
+import  React from 'react'
 import './Promote.css';
 import './Scala.css';
+import Footer from './Footer.jsx';
 import PMRollPaper from '../img/Promote/PMRollPaper.png'
 import PMRollPaperBG from '../img/Promote/PMRollPaperBG.png'
 import PMText from '../img/Promote/PMTXT.png'
@@ -136,6 +137,7 @@ const Promote = () => {
         <div id='txt-01' className='flex justify-center mb-20'><img className='w-8/12' src={PMText2} alt="pmtxt2" /></div>
         <div id='txt-02' className='flex justify-center'><img className='w-10/12' src={PMWallet} alt="wallet" /></div>
       </div>
+
     </div>
   )
 }

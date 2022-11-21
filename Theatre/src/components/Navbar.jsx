@@ -3,9 +3,23 @@ import { navLinks } from '../constants';
 import styles from '../style';
 import { useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
+import {Drawer} from "@mui/material";
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState({
+      top: false,
+      left: false,
+      bottom: false,
+      right: false,
+  });
+
+  const toggleDrawer = (anchor, open) => (event) => {
+      if(event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+          return;
+      }
+
+      setToggle({...toggle, [anchor]:open});
+  };
 
   return (
     <nav className="w-full flex py-6
@@ -22,7 +36,7 @@ const Navbar = () => {
         </ul>
 
         <div className='flex flex-1 justify-end items-center sm:hidden'>
-            <MenuIcon className='w-[28px] h-[28px] object-contain'
+            <MenuIcon className='w-[28px] h-[28px] mx-4 object-contain'
             onClick={() => setToggle((prev) => !prev)}/>
 
             <div className={`${toggle ? 'flex' : 'hidden'} p-6 absolute top-20 right-0 mx-4 my-2 

@@ -1,30 +1,38 @@
 export const navLinks = [
     {
-        id: "history",
-        title: "History",
+        id: "starting",
+        title: "จุดเริ่มตน",
     },
     {
         id: "turning_point",
-        title: "Turning Point",
+        title: "จุดเปลี่ยน",
     },
     {
-        id: "next_level",
-        title: "Next Level",
+        id: "scala",
+        title: "สกาล่า",
     },
     {
-        id: "stuff",
-        title: "Stuff",
+        id: "chaloemkrung",
+        title: "ศาลาเฉลิมกรุง",
     },
     {
-        id: "architecture",
-        title: "Architecture",
+        id: "lido",
+        title: "ลิโด้",
     },
     {
-        id: "publish",
-        title: "Publish",
+        id: "chaloemthai",
+        title: "ศาลาเฉลิมไทย",
     },
     {
-        id: "conclusion",
-        title: "Conclusion"
+        id: "promote",
+        title: "โปรโมท"
+    },
+    {
+        id: "ticket",
+        title: "ตั๋ว"
+    },
+    {
+        id: "ending",
+        title: "ลาโรง"
     },
 ];
