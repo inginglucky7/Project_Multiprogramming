@@ -105,7 +105,7 @@ const Fahsiam = () => {
                         <FahSiamPicture className={`z-10`} />
                         <div className="mix-blend-difference z-0">
                             <img className="absolute top-[55vw] sm:hidden md:hidden lg:hidden" src="https://cdn.discordapp.com/attachments/1031263201763016704/1036032069177978990/2_2.png"/>
-                            <img className="absolute top-[70vw] xs:hidden sm:block" src="https://cdn.discordapp.com/attachments/1031263201763016704/1031371918642782219/i.png"/>
+                            <img id="turning_point" className="absolute top-[70vw] xs:hidden sm:block" src="https://cdn.discordapp.com/attachments/1031263201763016704/1031371918642782219/i.png"/>
                         </div>
                     </div>
                 </div>
@@ -127,7 +127,7 @@ const Fahsiam = () => {
                     </div>
                 </div>
 
-                <div id="turning_point" className="sm:max-w-xl md:max-w-[100%] max-h-[100%] h-auto w-[100%] mx-auto sm:mb-0 xs:max-w-sm">
+                <div className="sm:max-w-xl md:max-w-[100%] max-h-[100%] h-auto w-[100%] mx-auto sm:mb-0 xs:max-w-sm">
                     <div className="relative">
                         <h2 ref={el => {turningPointRef = el}} className={`${styles.heading3Fahsiam} opacity-0 xs:relative
                         xs:pl-[10vw] xs:bottom-[14vw]

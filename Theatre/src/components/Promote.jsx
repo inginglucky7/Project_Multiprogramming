@@ -1,6 +1,6 @@
 import  React, {useState} from 'react'
-import './Promote.css';
-import './Scala.css';
+import '../css/Promote.css';
+import '../css/Scala.css';
 import PMRollPaper from '../img/Promote/PMRollPaper.png'
 import PMRollPaperBG from '../img/Promote/PMRollPaperBG.png'
 import PMText from '../img/Promote/PMTXT.png'
@@ -29,17 +29,18 @@ const Promote = () => {
   const [ticket, setTicket] = useState(1)
   return (
     <div className='promotebody'>
+      <div id="promote">
+        <div className='xs:hidden sm:block'>
+          <img className='absolute scale-100' src={PMRollPaper} alt="pmpaper" />
+          <img id='txt-01' className='absolute scale-100' src={PMText} alt="pmtxt" />
+          <img className='scale-100' src={PMRollPaperBG} alt="pmpaperbg" />
+        </div>
 
-      <div className='xs:hidden sm:block'>
-        <img className='absolute scale-100' src={PMRollPaper} alt="pmpaper" />
-        <img id='txt-01' className='absolute scale-100' src={PMText} alt="pmtxt" />
-        <img className='scale-100' src={PMRollPaperBG} alt="pmpaperbg" />
-      </div>
-
-      <div className='sm:hidden xs:block'>
-        <img className='absolute scale-100' src={PMMobilePaper} alt="pmpaper" />
-        <img id='txt-01' className='absolute scale-100' src={PMMobileTXT} alt="pmtxt" />
-        <img className='scale-100' src={PMMobileBG} alt="pmpaperbg" />
+        <div className='sm:hidden xs:block'>
+          <img className='absolute scale-100' src={PMMobilePaper} alt="pmpaper" />
+          <img id='txt-01' className='absolute scale-100' src={PMMobileTXT} alt="pmtxt" />
+          <img className='scale-100' src={PMMobileBG} alt="pmpaperbg" />
+        </div>
       </div>
 
       <div className='xs:hidden sm:block'>
@@ -147,42 +148,45 @@ const Promote = () => {
             จึงมีการเปลี่ยนให้เพลงสรรเสริญพระบารมีมาฉายก่อนหนังฉายแทน</p>
         </div>
       </div>
-
-      <div className='xs:hidden sm:block mt-80'>
-        <div id='txt-01' className='flex justify-center mb-32'><img className='w-3/12' src={PMText2} alt="pmtxt2" /></div>
-        <div className='grid grid-cols-2 grid-rows-1'>
-          <div id='txt-02' className='box flex justify-center'>
-            <img className='scale-[0.8]' src={PMWallet} alt="wallet" />
-          </div>
-          <div id='txt-02' className='box flex justify-center'>
-            <img className='scale-[0.8]' src={PMPopup} alt="popup" />
-            <img className='absolute mr-[50%] mt-[15%]' src={ticket === 1 ? T1 : ticket === 2 ? T2 : ticket === 3 ? T3 : ticket === 4 ? T4 : T5} alt="ticketpic" />
-            <div className='ml-16'>
-              <img className='btnc w-2/12 mb-8' onClick={() => {setTicket(1)}} src={One} alt="number" />
-              <img className='btnc w-2/12 mb-8' onClick={() => {setTicket(2)}} src={Two} alt="number" />
-              <img className='btnc w-2/12 mb-8' onClick={() => {setTicket(3)}} src={Three} alt="number" />
-              <img className='btnc w-2/12 mb-8' onClick={() => {setTicket(4)}} src={Four} alt="number" />
-              <img className='btnc w-2/12' onClick={() => {setTicket(5)}} src={Five} alt="number" />
+      <div id="ticket">
+        <div className='xs:hidden sm:block mt-80'>
+          <div id='txt-01' className='flex justify-center mb-32'><img className='w-3/12' src={PMText2} alt="pmtxt2" /></div>
+          <div className='grid grid-cols-2 grid-rows-1'>
+            <div id='txt-02' className='box flex justify-center'>
+              <img className='scale-[0.8]' src={PMWallet} alt="wallet" />
             </div>
+            <div id='txt-02' className='box flex justify-center'>
+              <img className='scale-[0.8]' src={PMPopup} alt="popup" />
+              <img className='absolute mr-[50%] mt-[15%]' src={ticket === 1 ? T1 : ticket === 2 ? T2 : ticket === 3 ? T3 : ticket === 4 ? T4 : T5} alt="ticketpic" />
+              <div className='ml-16'>
+                <img className='btnc w-2/12 mb-8' onClick={() => {setTicket(1)}} src={One} alt="number" />
+                <img className='btnc w-2/12 mb-8' onClick={() => {setTicket(2)}} src={Two} alt="number" />
+                <img className='btnc w-2/12 mb-8' onClick={() => {setTicket(3)}} src={Three} alt="number" />
+                <img className='btnc w-2/12 mb-8' onClick={() => {setTicket(4)}} src={Four} alt="number" />
+                <img className='btnc w-2/12' onClick={() => {setTicket(5)}} src={Five} alt="number" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div id='txt-02' className='sm:hidden xs:block mt-60'>
+          <div id='txt-01' className='flex justify-center mb-20'><img className='w-8/12' src={PMText2} alt="pmtxt2" /></div>
+          <div id='txt-02' className='flex justify-center mb-10'><img className='w-10/12' src={PMWallet} alt="wallet" /></div>
+          <div className='flex justify-center mb-5'>
+            <img className='scale-[0.75]' src={PMPopup} alt="popup" />
+            <img className='absolute scale-[0.9] mt-[30%]' src={ticket === 1 ? T1 : ticket === 2 ? T2 : ticket === 3 ? T3 : ticket === 4 ? T4 : T5} alt="ticketpic" />
+          </div>
+          <div id='txt-02' className='flex justify-center -mb-8'>
+            <img className='btnc w-2/12 mr-2' onClick={() => {setTicket(1)}} src={One} alt="number" />
+            <img className='btnc w-2/12 mr-2' onClick={() => {setTicket(2)}} src={Two} alt="number" />
+            <img className='btnc w-2/12 mr-2' onClick={() => {setTicket(3)}} src={Three} alt="number" />
+            <img className='btnc w-2/12 mr-2' onClick={() => {setTicket(4)}} src={Four} alt="number" />
+            <img className='btnc w-2/12' onClick={() => {setTicket(5)}} src={Five} alt="number" />
           </div>
         </div>
       </div>
 
-      <div id='txt-02' className='sm:hidden xs:block mt-60'>
-        <div id='txt-01' className='flex justify-center mb-20'><img className='w-8/12' src={PMText2} alt="pmtxt2" /></div>
-        <div id='txt-02' className='flex justify-center mb-10'><img className='w-10/12' src={PMWallet} alt="wallet" /></div>
-        <div className='flex justify-center mb-5'>
-          <img className='scale-[0.75]' src={PMPopup} alt="popup" />
-          <img className='absolute scale-[0.9] mt-[30%]' src={ticket === 1 ? T1 : ticket === 2 ? T2 : ticket === 3 ? T3 : ticket === 4 ? T4 : T5} alt="ticketpic" />
-        </div>
-        <div id='txt-02' className='flex justify-center -mb-8'>
-          <img className='btnc w-2/12 mr-2' onClick={() => {setTicket(1)}} src={One} alt="number" />
-          <img className='btnc w-2/12 mr-2' onClick={() => {setTicket(2)}} src={Two} alt="number" />
-          <img className='btnc w-2/12 mr-2' onClick={() => {setTicket(3)}} src={Three} alt="number" />
-          <img className='btnc w-2/12 mr-2' onClick={() => {setTicket(4)}} src={Four} alt="number" />
-          <img className='btnc w-2/12' onClick={() => {setTicket(5)}} src={Five} alt="number" />
-        </div>
-      </div>
 
     </div>
   )

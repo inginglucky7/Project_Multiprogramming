@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import TearPaper from '../img/Scala/Tear Paper.svg'
-import "./Chaloemkrung.css"
+import "../css/Chaloemkrung.css"
 const Chaloemkrung = () => {
   useEffect(() => {
     const cha_xx=document.querySelectorAll(".cha-xx")

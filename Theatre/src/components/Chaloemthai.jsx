@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from 'react'
-import './Chaloemthai.css';
-import './Scala.css';
+import '../css/Chaloemthai.css';
+import '../css/Scala.css';
 // import CLTPaper from '../img/Chaloemthai/Paper.png'
 import CLTLogo from '../img/Chaloemthai/Logo.png'
 import CLTBG from '../img/Chaloemthai/CTLBuildingBG.png'
@@ -40,8 +40,8 @@ const Chaloemthai = () => {
                 trigger: redCarChaloemthaiRef,
                 scrub: 1,
             },
-            x: 200,
-            y: -60,
+            x: 75,
+            y: -40,
             ease: "inOut"
         });
         gsap.to(iceCreamCart, 1, {

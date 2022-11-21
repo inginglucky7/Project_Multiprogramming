@@ -1,5 +1,5 @@
 import React, {useEffect, useRef} from 'react';
-import './Scala.css';
+import '../css/Scala.css';
 import ScalaLogo from '../img/Scala/Scala Logo.png'
 import ScalaAura from '../img/Scala/Scala Aura.png'
 import ScalaCar from '../img/Scala/Scala Car.png'
@@ -35,7 +35,7 @@ const Scala = () => {
         trigger: carRef,
         scrub: 1,
       },
-      x: 600,
+      x: 300,
       y: 50,
       ease: "inOut"
     });

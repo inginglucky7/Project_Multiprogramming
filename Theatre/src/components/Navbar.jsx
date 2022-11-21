@@ -3,6 +3,12 @@ import { navLinks } from '../constants';
 import { useState } from 'react';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import MenuIcon from '@mui/icons-material/Menu';
+import {gsap} from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
 import {
     Box,
     Button,
@@ -13,7 +19,9 @@ import {
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(true);
-
+    const scrollToScala = (link) => {
+        gsap.to(window, {duration:3, scrollTo:{y:`#${link}`, offsetY:50, autoKill: true}, ease: "power3"})
+    };
 
     return (
         <nav id="navbar">
@@ -52,7 +60,8 @@ const Navbar = () => {
                                 href={`#${nav.id}`}
                                 key={index}
                                 onClick={() => {
-                                    setToggle();
+                                    setToggle(!toggle);
+                                    scrollToScala(`#${nav.id}`);
                                 }}
                                 style={{
                                     width: "100%",
