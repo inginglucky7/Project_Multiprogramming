@@ -1,7 +1,7 @@
 import React from 'react'
 import './Chaloemthai.css';
 import './Scala.css';
-import CLTPaper from '../img/Chaloemthai/Paper.png'
+// import CLTPaper from '../img/Chaloemthai/Paper.png'
 import CLTLogo from '../img/Chaloemthai/Logo.png'
 import CLTBG from '../img/Chaloemthai/CTLBuildingBG.png'
 import CLTBuilding from '../img/Chaloemthai/CTLBuilding.png'
@@ -22,11 +22,11 @@ import * as ScalaJS from '../js/scala.js';
 const Chaloemthai = () => {
   return (
     <div className='cltbody'>
-      <div>
+      {/* <div>
         <img src={CLTPaper} alt="paper" />
-      </div>
-      <div className='flex justify-center'>
-        <img id='txt-03' className='sm:-mt-60 xs:-mt-12' src={CLTLogo} alt="logo" />
+      </div> */}
+      <div className='flex justify-center mt-40'>
+        <img id='txt-03' className='sm:-mt-30 xs:mt-12' src={CLTLogo} alt="logo" />
       </div>
       <div className='sm:my-0 xs:my-20'>
         <div className='text-center sm:-mt-28 xs:mx-20'>

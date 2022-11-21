@@ -14,7 +14,7 @@ import PMText2 from '../img/Promote/PMTXT2.png'
 import PMMobileBG from '../img/Promote/PMMobileBG.png'
 import PMMobilePaper from '../img/Promote/PMMobilePaper.png'
 import PMMobileTXT from '../img/Promote/PMMobileTXT.png'
-import * as ScalaJS from '../../scala';
+
 
 const Promote = () => {
   return (

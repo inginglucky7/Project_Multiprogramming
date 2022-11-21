@@ -23,6 +23,7 @@ import Change1 from '../img/Lido/2511.png';
 import Change2 from '../img/Lido/2536.png';
 import Change3 from '../img/Lido/2561.png';
 import Camera from '../img/Lido/RedCam.png';
+import CLTPaper from '../img/Chaloemthai/Paper.png'
 
 const Lido = () => {
   return (
@@ -64,6 +65,7 @@ const Lido = () => {
       <img id="change2" src={Change2} />
       <img id="change3" src={Change3} />
       <img id="camera" src={Camera} />
+      <img id="paper" src={CLTPaper} />
       <p id="text-4">
         <b>คุณกอบชัย ลูกชายคุณวิชัย อโสตถิกุล </b> ผู้บริหารบริษัท เซาท์อีสท์เอเชียก่อสร้าง จำกัด <br></br>
         ได้รับโอกาสจากทางจุฬาฯ ให้เข้าไปพัฒนาที่ดินผืนใหญ่ 52 ไร่ พร้อมกับโจทย์ให้พัฒนาที่ดินผืนนี้ <br></br>
