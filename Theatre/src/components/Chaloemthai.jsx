@@ -1,7 +1,7 @@
 import React from 'react'
 import './Chaloemthai.css';
 import './Scala.css';
-import CLTPaper from '../img/Chaloemthai/Paper.png'
+// import CLTPaper from '../img/Chaloemthai/Paper.png'
 import CLTLogo from '../img/Chaloemthai/Logo.png'
 import CLTBG from '../img/Chaloemthai/CTLBuildingBG.png'
 import CLTBuilding from '../img/Chaloemthai/CTLBuilding.png'
@@ -22,11 +22,11 @@ import * as ScalaJS from '../js/scala.js';
 const Chaloemthai = () => {
   return (
     <div className='cltbody'>
-      <div>
+      {/* <div>
         <img src={CLTPaper} alt="paper" />
-      </div>
-      <div className='flex justify-center'>
-        <img id='txt-03' className='sm:-mt-60 xs:-mt-12' src={CLTLogo} alt="logo" />
+      </div> */}
+      <div className='flex justify-center mt-40'>
+        <img id='txt-03' className='sm:-mt-30 xs:mt-12' src={CLTLogo} alt="logo" />
       </div>
       <div className='sm:my-0 xs:my-20'>
         <div className='text-center sm:-mt-28 xs:mx-20'>
@@ -151,7 +151,8 @@ const Chaloemthai = () => {
       <div>
         <div className='mt-20'>
           <img id='txt-01' className='absolute xs:hidden sm:block' src={CLTPaperTxt} alt="pptxt" />
-          <img className='absolute sm:scale-100 xs:scale-150' src={CLTTP} alt="tb" />
+
+          <img className='absolute sm:scale-[1.275] xs:scale-150' src={CLTTP} alt="tb" />
 
           <div className='absolute cltchange xs:hidden sm:block'>
             <p id='txt-01' className='text-2xl'>จุดเปลี่ยน</p><br />
@@ -165,7 +166,7 @@ const Chaloemthai = () => {
               ได้อย่างแจ่มชัด</p>
           </div>
           
-          <img className='sm:scale-100 xs:scale-150' src={CLTTPBG} alt="tbbg" />
+          <img className='sm:scale-[1.275] xs:scale-150' src={CLTTPBG} alt="tbbg" />
         </div>
       </div>
     </div>

@@ -124,7 +124,7 @@ h1 {
   font-weight: 500;
   line-height: 1.55em;
   transform: translateY(1vw);
-  transition: 2.25s ease-in-out;
+  transition: 0.75s ease-in-out;
   opacity: 0;
 } 
 #text-2.active{
@@ -151,7 +151,7 @@ h1 {
   font-weight: 500;
   line-height: 1.25em;
   opacity: 0;
-  transition: 1s ease-in-out;
+  transition: 0.75s ease-in-out;
   transform: translateX(-0.5vw);
 } 
 #text-3.active{
@@ -277,6 +277,11 @@ h1 {
   50% {
     transform: scale(0.8);
   }
+}
+#paper{
+  position: absolute;
+  margin-top: 372vw;
+  width: 100%;
 }
 #film{
   position: absolute;
@@ -421,6 +426,11 @@ h1 {
 #light-brown{
   position: absolute;
   visibility: hidden;
+}
+@media(min-width: 0px) and (max-width: 1440px) {
+  #paper{
+    margin-top: 380vw;
+  }
 }
 
 @media(min-width: 0px) and (max-width: 799px) {
@@ -614,9 +624,9 @@ h1 {
     visibility: visible;
   }
   #camera{
-    margin-top: 1280vw;
+    margin-top: 1308vw;
     margin-left: 50vw;
-    width: 40%;
+    width: 50%;
     
   }
 
@@ -640,6 +650,21 @@ h1 {
   #people2{
     margin-right: 105vw;
   }
+  #paper{
+    margin-top: 1330vw;
+  }
+  #camera{
+    margin-top: 1295vw;
+  }
+}
+
+@media(min-width: 0px) and (max-width: 629px) {
+  #film{
+    margin-top: 74vw;
+  }
+  #paper{
+    margin-top: 1345vw;
+  }
 }
 @media(min-width: 10px) and (max-width: 399px) {
   #text-11{
@@ -654,14 +679,12 @@ h1 {
   #people2{
     margin-right: 205vw;
   }
-}
-@media(min-width: 0px) and (max-width: 629px) {
-  #film{
-    margin-top: 74vw;
+  #paper{
+    margin-top: 1345vw;
   }
-
+  #camera{
+    margin-top: 1310vw;
+  }
 }
 
-@media(min-width: 0px) and (max-width: 1440px) {
 
-}

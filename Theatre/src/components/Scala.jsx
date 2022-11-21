@@ -202,7 +202,7 @@ const Scala = () => {
             เมื่อวันที่ 1 พฤศจิกายน พ.ศ. 2563</p>
         </div>
         <div className='sm:block xs:hidden relative'>
-          <img className='w-full mx-auto' src={ScalaEx} alt="ex" />
+          <img className='z-10 scale-[1]' src={ScalaEx} alt="ex" />
         </div>
       </div>
 
@@ -213,7 +213,7 @@ const Scala = () => {
             เมื่อวันที่ 1 พฤศจิกายน พ.ศ. 2563</p>
         </div>
         <div className='xs:block sm:hidden relative'>
-          <img className='w-full mx-auto' src={ScalaEx} alt="ex" />
+          <img className='scale-[1]' src={ScalaEx} alt="ex" />
         </div>
       </div>
     </div>
