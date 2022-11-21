@@ -11,14 +11,10 @@ import PMRedCar from '../img/Promote/PMRedCar.png'
 import PMWatch from '../img/Promote/PMWatch.png'
 import PMWallet from '../img/Promote/PMWallet.png'
 import PMText2 from '../img/Promote/PMTXT2.png'
-<<<<<<< Updated upstream
-import * as ScalaJS from '../js/scala.js';
-=======
 import PMMobileBG from '../img/Promote/PMMobileBG.png'
 import PMMobilePaper from '../img/Promote/PMMobilePaper.png'
 import PMMobileTXT from '../img/Promote/PMMobileTXT.png'
 import * as ScalaJS from '../../scala';
->>>>>>> Stashed changes
 
 const Promote = () => {
   return (
