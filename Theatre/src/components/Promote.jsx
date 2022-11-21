@@ -14,7 +14,7 @@ import PMText2 from '../img/Promote/PMTXT2.png'
 import PMMobileBG from '../img/Promote/PMMobileBG.png'
 import PMMobilePaper from '../img/Promote/PMMobilePaper.png'
 import PMMobileTXT from '../img/Promote/PMMobileTXT.png'
-
+import PMPopup from '../img/Promote/PMPopup.png'
 
 const Promote = () => {
   return (
@@ -64,8 +64,8 @@ const Promote = () => {
       <div className='xs:hidden sm:block mt-40'>
         <div className='flex items-center'>
           <div className='w-1/2 ml-60'>
-            <p id='txt-01' className='text-xl text-promote mb-8'>ของกินหน้าโรงหนัง</p>
-            <p id='txt-01' className='text-base text-promote'>สมัยก่อนบรรยากาศหน้าโรงหนังจะดูคึกคักเป็นอย่างมาก จะมีรถเข็นนำผลไม้และอาหารคาวหวาน <br />
+            <p id='txt-04' className='text-xl text-promote mb-8'>ของกินหน้าโรงหนัง</p>
+            <p id='txt-04' className='text-base text-promote'>สมัยก่อนบรรยากาศหน้าโรงหนังจะดูคึกคักเป็นอย่างมาก จะมีรถเข็นนำผลไม้และอาหารคาวหวาน <br />
               อาทิ มะยมดอง ฝรั่งชุบบ๊วย ปลาหมึกย่าง คนสงขลาจะเรียกรถเข็นเหล่านี้ว่า "รถกุ๊งกิ๊ง" <br /><br />
 
               และถ้าย้อนไปที่ "สหภาพยนตร์" โรงหนังดังเมืองสงขลา จะมีอาแปะถือถาดหนึ่งใบภายในถาด <br />
@@ -90,8 +90,8 @@ const Promote = () => {
         <div className='flex items-center'>
           <div className='w-1/2'><img id='txt-05' className='w-8/12' src={PMRedCar} alt="redcar" /></div>
           <div className='w-1/2 -ml-20'>
-            <p id='txt-01' className='text-xl text-promote mb-8'>รถแห่หนังในสมัยก่อน</p>
-            <p id='txt-01' className='text-base text-promote'>หลายคนคงจะเคยเห็นรถกระบะที่ติดป้ายไม้คัทเอาท์ภาพวาดโปสเตอร์ของหนังเรื่องต่างๆ รถแห่จะขับเวียนไปทั่วเมือง <br />
+            <p id='txt-05' className='text-xl text-promote mb-8'>รถแห่หนังในสมัยก่อน</p>
+            <p id='txt-05' className='text-base text-promote'>หลายคนคงจะเคยเห็นรถกระบะที่ติดป้ายไม้คัทเอาท์ภาพวาดโปสเตอร์ของหนังเรื่องต่างๆ รถแห่จะขับเวียนไปทั่วเมือง <br />
               พร้อมเสียงประกาศโดยโฆษกผ่านลำโพง ระบุชื่อหนัง วันฉาย โรงภาพยนตร์ และนักแสดง <br /><br />
 
               รถแห่เป็นอีกหนึ่งวิธีการประชาสัมพันธ์โฆษณาหนัง ซึ่งจะมีการโปรยใบปลิวหนังขนาดเท่ากระดาษ A4 อีกด้วย <br />
@@ -139,8 +139,15 @@ const Promote = () => {
       </div>
 
       <div className='xs:hidden sm:block mt-80'>
-        <div id='txt-01' className='flex justify-center mb-24'><img className='w-3/12' src={PMText2} alt="pmtxt2" /></div>
-        <div id='txt-02' className='flex justify-center'><img src={PMWallet} alt="wallet" /></div>
+        <div className='flex justify-center mb-48'><img className='w-3/12' src={PMText2} alt="pmtxt2" /></div>
+        <div className='grid grid-cols-2 grid-rows-1 gap-2'>
+          <div className='box flex justify-center'>
+            <img src={PMWallet} alt="wallet" />
+          </div>
+          <div className='box flex justify-center'>
+            <img src={PMPopup} alt="popup" />
+          </div>
+        </div>
       </div>
       <div className='sm:hidden xs:block mt-60'>
         <div id='txt-01' className='flex justify-center mb-20'><img className='w-8/12' src={PMText2} alt="pmtxt2" /></div>
