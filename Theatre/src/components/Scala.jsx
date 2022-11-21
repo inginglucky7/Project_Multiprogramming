@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import './Scala.css';
 import ScalaLogo from '../img/Scala/Scala Logo.png'
 import ScalaAura from '../img/Scala/Scala Aura.png'
@@ -19,9 +19,28 @@ import InsideBG from '../img/Scala/Inside BG.png'
 import Lights from '../img/Scala/Lights.png'
 import Elip from '../img/Scala/Ellipse.png'
 import EBG from '../img/Scala/EBG.png'
+import {gsap} from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 import * as ScalaJS from '../js/scala.js';
 
 const Scala = () => {
+  let carRef = useRef(null);
+
+  useEffect(() => {
+    gsap.to(carRef, 1, {
+      scrollTrigger: {
+        trigger: carRef,
+        scrub: 1,
+      },
+      x: 1000,
+      y: 50,
+      ease: "inOut"
+    });
+  }, []);
+
   return (
     <div className='body'> 
       <div className='flex justify-center xs:mx-16 sm:mx-8'>
@@ -44,7 +63,7 @@ const Scala = () => {
 
         <div><img className='sm:scale-100 absolute xs:scale-150' src={BushWLight} alt="bushwlight" /></div>
 
-        <div><img className='sm:scale-100 absolute xs:scale-150' src={ScalaCar} alt="car" /></div>
+        <div><img ref={el => {carRef = el}} className='sm:scale-100 absolute xs:scale-150' src={ScalaCar} alt="car" /></div>
         <div><img className='lights sm:scale-100 absolute xs:scale-150' src={Lights} alt="lights" /></div>
 
         <div><img className='sm:scale-100 xs:scale-150' src={ScalaBG} alt="bg" /></div>

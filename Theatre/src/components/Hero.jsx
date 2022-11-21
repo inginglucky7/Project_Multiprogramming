@@ -6,7 +6,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import FahSiamPicture from "./FahSiamPicture.jsx";
 
-
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 const Hero = () => {

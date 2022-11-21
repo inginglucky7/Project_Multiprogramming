@@ -1,7 +1,7 @@
 export const navLinks = [
     {
         id: "starting",
-        title: "จุดเริ่มตน",
+        title: "จุดเริ่มต้น",
     },
     {
         id: "turning_point",
