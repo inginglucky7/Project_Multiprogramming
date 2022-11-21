@@ -14,7 +14,6 @@ import PMText2 from '../img/Promote/PMTXT2.png'
 import PMMobileBG from '../img/Promote/PMMobileBG.png'
 import PMMobilePaper from '../img/Promote/PMMobilePaper.png'
 import PMMobileTXT from '../img/Promote/PMMobileTXT.png'
-import * as ScalaJS from '../../scala';
 
 const Promote = () => {
   return (
@@ -26,7 +25,7 @@ const Promote = () => {
         <img className='scale-100' src={PMRollPaperBG} alt="pmpaperbg" />
       </div>
 
-      <div className='sm:hidden xs:block'>
+      <div className='sm:hidden xs:block mt-[30px]'>
         <img className='absolute scale-100' src={PMMobilePaper} alt="pmpaper" />
         <img id='txt-01' className='absolute scale-100' src={PMMobileTXT} alt="pmtxt" />
         <img className='scale-100' src={PMMobileBG} alt="pmpaperbg" />

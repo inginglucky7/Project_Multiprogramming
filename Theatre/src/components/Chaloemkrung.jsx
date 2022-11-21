@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import TearPaper from '../img/Scala/Tear Paper.svg'
 import "./Chaloemkrung.css"
 const Chaloemkrung = () => {
   useEffect(() => {
@@ -18,6 +19,7 @@ const Chaloemkrung = () => {
   }, [])
   return (
     <div className='bg-[#F3EEE1] pt-10 bg-[url("/img/Chaloemkrung/texture_bg_dot_clk.png")] text-xl transform-gpu'>
+      <img className='sm:-mt-[18%] scale-[1] xs:-mt-[26%]' src={TearPaper} alt="tp" />
       <img className='max-w-6xl w-4/5 lg:w-full mx-auto cha-xx title' src="/img/Chaloemkrung/logoclk.png" alt="" />
       <p className='max-w-5xl w-4/5 mx-auto text-center cha-xx text'>ความเป็นมาของศาลาเฉลิมกรุงเริ่มขึ้นตั้งแต่ก่อนการเปลี่ยนแปลงการปกครอง เมื่อพระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัว รัชกาลที่ 7 ทรงมีพระราชดำริให้จัดสร้างถาวรวัตุถุขนาดใหญ่ที่จะสามารถอำนวยประโยชน์ให้กับสาธารณชนได้เพื่อเป็นระลึกแห่งการเฉลิมฉลองที่
         กรุงเทพมหานครจะมีอายุครบ 150 ปี ในพ.ศ. 2475</p>

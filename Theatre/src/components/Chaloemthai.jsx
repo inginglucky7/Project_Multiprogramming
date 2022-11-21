@@ -151,7 +151,8 @@ const Chaloemthai = () => {
       <div>
         <div className='mt-20'>
           <img id='txt-01' className='absolute xs:hidden sm:block' src={CLTPaperTxt} alt="pptxt" />
-          <img className='absolute sm:scale-100 xs:scale-150' src={CLTTP} alt="tb" />
+
+          <img className='absolute sm:scale-[1.275] xs:scale-150' src={CLTTP} alt="tb" />
 
           <div className='absolute cltchange xs:hidden sm:block'>
             <p id='txt-01' className='text-2xl'>จุดเปลี่ยน</p><br />
@@ -165,7 +166,7 @@ const Chaloemthai = () => {
               ได้อย่างแจ่มชัด</p>
           </div>
           
-          <img className='sm:scale-100 xs:scale-150' src={CLTTPBG} alt="tbbg" />
+          <img className='sm:scale-[1.275] xs:scale-150' src={CLTTPBG} alt="tbbg" />
         </div>
       </div>
     </div>
