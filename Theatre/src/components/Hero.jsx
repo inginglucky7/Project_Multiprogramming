@@ -1,14 +1,19 @@
-import React, {useRef, useEffect} from 'react'
+import React, {useRef, useEffect, useState} from 'react'
 import styles from '../style';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import {navLinks} from "../constants/index.js";
 import FahSiamPicture from "./FahSiamPicture.jsx";
+import MenuIcon from '@mui/icons-material/Menu';
+import {Navbar} from "./index.js";
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 const Hero = () => {
+    const [isDrawerOpen, setDrawerOpen] = useState(false);
+    const [toggle, setToggle] = useState(null);
     let textStandAlone = useRef(null);
     let infoHero = useRef(null);
     let logoStandAlone = useRef(null);

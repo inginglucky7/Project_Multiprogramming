@@ -1,9 +1,9 @@
-import React from 'react'
+import React, {useEffect, useRef} from 'react'
 import { navLinks } from '../constants';
 import styles from '../style';
 import { useState } from 'react';
-import MenuIcon from '@mui/icons-material/Menu';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
+import MenuIcon from '@mui/icons-material/Menu';
 import {
     Box,
     Button,
@@ -19,13 +19,23 @@ import {
 } from "@mui/material";
 
 const Navbar = () => {
-    const [toggle, setToggle] = useState(null);
+    const [toggle, setToggle] = useState(true);
+    let drawer = useRef(null);
+
+    useEffect(() => {
+        console.log(drawer);
+    }, [])
 
     return (
         <div id="wrapbg" className="bg-[#f9f3e2]">
-            <Drawer
+            <MenuIcon className='w-[28px] h-[28px] mx-4 object-contain'
+                      onClick={() => {setToggle(!toggle)}}/>
+            <Drawer ref={el => (drawer = el)}
                 anchor="right"
-                open={0}
+                open={!toggle}
+                onClose={() => {
+                    setToggle(!toggle);
+                }}
                 style={{backdropFilter: "blur(5px)",
                 backgroundColor: "#f9f3e2"}}
             >
@@ -60,8 +70,6 @@ const Navbar = () => {
                     </Box>
                 </Box>
                 <Box id="closewrap"
-                     close = {
-                     () => {setToggle((prev) => !prev)}}
                      style={{
                     width: "280px",
                     backgroundColor: "#f9f3e2",
@@ -70,7 +78,9 @@ const Navbar = () => {
                     justifyContent: "flex-end",
                     position: "fixed",
                 }}>
-                    <CloseRoundedIcon style={{
+                    <CloseRoundedIcon
+                        onClick = {() => {setToggle(!toggle)}}
+                        style={{
                         ":hover": {
                             backgroundColor: "#eee",
                             borderRadius: "100%",
