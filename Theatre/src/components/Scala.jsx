@@ -42,7 +42,7 @@ const Scala = () => {
   }, []);
 
   return (
-    <div className='body'> 
+    <div id="scala" className='body'>
       <div className='flex justify-center xs:mx-16 sm:mx-8'>
         <img id='txt-01' className='logo sm:mt-60 xs:mt-40' src={ScalaLogo} alt="logo" />
       </div>

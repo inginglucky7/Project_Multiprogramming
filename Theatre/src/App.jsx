@@ -7,14 +7,14 @@ const App = () => (
 
     <div className='w-full overflow-hidden'>
         <div className={`flex justify-center max-w-full`}>
-            <div className={`xl:fixed xl:z-20 ${styles.boxWidth}`}>
-                <Navbar />
+            <div className={`fixed z-20 ${styles.boxWidth}`}>
+                <Navbar/>
             </div>
         </div>
 
         <div className={`${styles.flexCenter}`}>
             <div className={`${styles.boxWidth}`}>
-                <Hero />
+                <Hero id="starting"/>
             </div>
         </div>
 

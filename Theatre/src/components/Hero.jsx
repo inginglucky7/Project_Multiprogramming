@@ -4,16 +4,10 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-import {navLinks} from "../constants/index.js";
-import FahSiamPicture from "./FahSiamPicture.jsx";
-import MenuIcon from '@mui/icons-material/Menu';
-import {Navbar} from "./index.js";
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 const Hero = () => {
-    const [isDrawerOpen, setDrawerOpen] = useState(false);
-    const [toggle, setToggle] = useState(null);
     let textStandAlone = useRef(null);
     let infoHero = useRef(null);
     let logoStandAlone = useRef(null);
@@ -54,7 +48,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <section id="home" className={`flex md:flex-col flex-col`}>
+        <section id="starting" className={`flex md:flex-col flex-col`}>
             <div className={`flex-1 ${styles.flexCenter} flex-col xl:px-0 sm:px-16 px-6 xs:pb-5`}>
                 <img ref={el => {logoStandAlone = el}} src="https://cdn.discordapp.com/attachments/1031263201763016704/1031263453240905859/Logo_StandAlone.png"
                      className="scale-[0.2]" alt="Stand Alone"/>
