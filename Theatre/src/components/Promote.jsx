@@ -15,6 +15,8 @@ import PMMobileBG from '../img/Promote/PMMobileBG.png'
 import PMMobilePaper from '../img/Promote/PMMobilePaper.png'
 import PMMobileTXT from '../img/Promote/PMMobileTXT.png'
 import PMPopup from '../img/Promote/PMPopup.png'
+import Left from '../img/Ticket/Left.png'
+import Right from '../img/Ticket/Right.png'
 
 const Promote = () => {
   return (
@@ -139,16 +141,19 @@ const Promote = () => {
       </div>
 
       <div className='xs:hidden sm:block mt-80'>
-        <div className='flex justify-center mb-48'><img className='w-3/12' src={PMText2} alt="pmtxt2" /></div>
-        <div className='grid grid-cols-2 grid-rows-1 gap-2'>
+        <div className='flex justify-center mb-40'><img className='w-3/12' src={PMText2} alt="pmtxt2" /></div>
+        <div className='grid grid-cols-2 grid-rows-1'>
           <div className='box flex justify-center'>
-            <img src={PMWallet} alt="wallet" />
+            <img className='scale-[0.8]' src={PMWallet} alt="wallet" />
           </div>
           <div className='box flex justify-center'>
-            <img src={PMPopup} alt="popup" />
+            <img className='scale-[0.2]' src={Left} alt="popup" />
+            <img className='-mx-40' src={PMPopup} alt="popup" />
+            <img className='scale-[0.2]' src={Right} alt="popup" />
           </div>
         </div>
       </div>
+
       <div className='sm:hidden xs:block mt-60'>
         <div id='txt-01' className='flex justify-center mb-20'><img className='w-8/12' src={PMText2} alt="pmtxt2" /></div>
         <div id='txt-02' className='flex justify-center'><img className='w-10/12' src={PMWallet} alt="wallet" /></div>
