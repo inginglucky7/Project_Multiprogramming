@@ -48,7 +48,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <section id="starting" className={`flex md:flex-col flex-col`}>
+        <section id="starting" className={`flex md:flex-col flex-col max-w-[100%] h-[100%] w-[100%]`}>
             <div className={`flex-1 ${styles.flexCenter} flex-col xl:px-0 sm:px-16 px-6 xs:pb-5`}>
                 <img ref={el => {logoStandAlone = el}} src="https://cdn.discordapp.com/attachments/1031263201763016704/1031263453240905859/Logo_StandAlone.png"
                      className="scale-[0.2]" alt="Stand Alone"/>

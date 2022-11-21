@@ -1,26 +1,129 @@
-import React from 'react'
+import React, {useEffect, useRef} from 'react'
 import EndPicture from '../img/End/all_pic_end.png'
-import RedCurtain from '../img/End/ผ้าม่านแดง.png'
+import RedCurtainleft from '../img/End/ผ้าม่านแดง.png'
 import RedCurtainDeskRight from '../img/End/ผ้าม่านขวา.png'
 import RedCurtainDeskLeft from '../img/End/ผ้าม่านซ้าย.png'
-import SmallRedCurtain from '../img/End/ม่านลาโรง1.png'
+import RedCurtainright from '../img/End/ผ้าม่านแดง2.png'
 import Larong from '../img/End/ลาโรง.png'
 import LarongDesk from '../img/End/ลาโรงDesk.png'
 import Logo from '../img/End/logo_group.png'
 import LogoDesk from '../img/End/logo_group_desktop.png'
+import {gsap} from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 const Footer = () => {
+    let textFooter = useRef(null);
+    let textFooterRes = useRef(null);
+    let endingLarong = useRef(null);
+    let endingLarongRes = useRef(null);
+    let leftRedCurtain = useRef(null);
+    let rightRedCurtain = useRef(null);
+    let leftRedCurtainRes = useRef(null);
+    let rightRedCurtainRes = useRef(null);
+
+    useEffect(() => {
+        gsap.to(
+            textFooter, 1,{
+                scrollTrigger: {
+                    trigger: textFooter,
+                    toggleActions: "restart pause reverse pause"
+                },
+                opacity :1,
+                y:-50,
+                ease: "inOut"
+            }
+        );
+        gsap.to(
+            textFooterRes, 1,{
+                scrollTrigger: {
+                    trigger: textFooterRes,
+                    toggleActions: "restart pause reverse pause",
+                },
+                opacity :1,
+                y: -50,
+                ease: "inOut"
+            }
+        );
+        gsap.to(
+            endingLarong, 5,{
+                scrollTrigger: {
+                    trigger: endingLarong,
+                    toggleActions: "restart pause restart pause"
+                },
+                opacity :1,
+                y:-100,
+                ease: "inOut"
+            }
+        );
+        gsap.to(
+            endingLarongRes, 2,{
+                scrollTrigger: {
+                    trigger: endingLarongRes,
+                    toggleActions: "restart pause restart pause"
+                },
+                opacity :1,
+                y:-20,
+                ease: "inOut"
+            }
+        );
+        gsap.to(
+            leftRedCurtain, 5, {
+                scrollTrigger: {
+                    trigger: leftRedCurtain,
+                    toggleActions: "restart pause reverse pause",
+                    start: "300px center",
+                    scrub: 3,
+                },
+                x: 1200,
+                ease: "inOut"
+            });
+        gsap.to(
+            rightRedCurtain, 5, {
+                scrollTrigger: {
+                    trigger: rightRedCurtain,
+                    toggleActions: "restart pause reverse pause",
+                    start: "300px center",
+                    scrub: 3,
+                },
+                x: -1200,
+                ease: "inOut"
+            });
+        gsap.to(
+            leftRedCurtainRes, 5, {
+                scrollTrigger: {
+                    trigger: leftRedCurtain,
+                    toggleActions: "restart pause reverse pause",
+                    scrub: 3,
+                },
+                x: 210,
+                ease: "inOut"
+            });
+        gsap.to(
+            rightRedCurtainRes, 5, {
+                scrollTrigger: {
+                    trigger: rightRedCurtain,
+                    toggleActions: "restart pause reverse pause",
+                    scrub: 3,
+                },
+                x: -210,
+                ease: "inOut"
+            });
+    }, []);
+
   return (
       <section className="flex flex-col bg-[#3a352a] xs:pt-[80vw] sm:pt-[25vw]">
           <div id="footer">
               <div className="max-w-[100%] max-h-[100%] h-auto w-[100vw] mx-auto">
                   <div id="FahSiam_ending" className="relative">
-                      <p id="textFull" className="xs:hidden xl:block relative
-                       top-[15vw] text-[#ffffff] justify-center text-center">"สถานที่ที่ให้อารมณ์ความรู้สึก และพบเจอเหตุการ์ณมากมาย <br/>
+                      <p ref={el => {textFooter = el}} id="textFull" className="xs:hidden xl:block relative
+                       top-[15vw] text-[#ffffff] justify-center text-center opacity-0">"สถานที่ที่ให้อารมณ์ความรู้สึก และพบเจอเหตุการ์ณมากมาย <br/>
                           เปลื่ยนแปลงจากเก่าไปสู่ใหม่ จากยุคที่รุ่งเรืองที่สุด สู่ตำนาน"</p>
 
-                      <p id="textRes" className="xl:hidden relative
-                       top-[15vw] text-[#ffffff] justify-center text-center pb-[60vw]">"สถานที่ที่ให้อารมณ์ความรู้สึกและพบเจอ<br/>เหตุการ์ณมากมาย
+                      <p ref={el => {textFooterRes = el}} id="textRes" className="xl:hidden relative
+                       top-[15vw] text-[#ffffff] justify-center text-center pb-[60vw] opacity-0">"สถานที่ที่ให้อารมณ์ความรู้สึกและพบเจอ<br/>เหตุการ์ณมากมาย
                           เปลื่ยนแปลงจากเก่า<br/>ไปสู่ใหม่ จากยุคที่รุ่งเรืองที่สุด สู่ตำนาน"</p>
 
                       <img className="xs:hidden xl:block max-w-[100%] w-[100%] h-auto" src={EndPicture} alt=""/>
@@ -28,12 +131,12 @@ const Footer = () => {
                   </div>
 
                   <div id="curtain" className="relative mb-[5vw] sm:mb-[49vw]">
-                      <img className="absolute mx-[42.3vw] pt-[25vw] sm:hidden" src={Larong} alt=""/>
-                      <img className="absolute mx-[42.3vw] pt-[15vw] hidden sm:block" src={LarongDesk} alt=""/>
-                      <img className="relative right-[88vw] bottom-[2vw] sm:hidden" src={RedCurtain} alt=""/>
-                      <img className="absolute left-[88vw] bottom-[2vw] sm:hidden" src={RedCurtain} alt=""/>
-                      <img className="absolute right-[88vw] top-[-16vw] xs:hidden sm:block" src={RedCurtainDeskLeft} alt=""/>
-                      <img className="absolute left-[88vw] top-[-16vw] xs:hidden sm:block" src={RedCurtainDeskRight} alt=""/>
+                      <img ref={el => {endingLarongRes = el}} className="absolute opacity-0 mx-[42.3vw] pt-[25vw] sm:hidden" src={Larong} alt=""/>
+                      <img ref={el => {endingLarong = el}} className="absolute opacity-0 mx-[42.3vw] pt-[15vw] hidden sm:block" src={LarongDesk} alt=""/>
+                      <img ref={el => {leftRedCurtainRes = el}} className="relative right-[88vw] bottom-[2vw] sm:hidden" src={RedCurtainleft} alt=""/>
+                      <img ref={el => {rightRedCurtainRes = el}} className="absolute left-[88vw] bottom-[2vw] sm:hidden" src={RedCurtainright} alt=""/>
+                      <img ref={el => {leftRedCurtain = el}} className="absolute right-[88vw] top-[-16vw] xs:hidden sm:block" src={RedCurtainDeskLeft} alt=""/>
+                      <img ref={el => {rightRedCurtain = el}} className="absolute left-[88vw] top-[-16vw] xs:hidden sm:block" src={RedCurtainDeskRight} alt=""/>
                   </div>
 
                   <div id="curtain" className="flex xs:flex-col xl:flex-row relative mb-[5vw] sm:mb-[0vw]">

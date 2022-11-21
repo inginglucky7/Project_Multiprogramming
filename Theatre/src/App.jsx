@@ -5,7 +5,7 @@ import styles from './style';
 
 const App = () => (
 
-    <div className='w-full overflow-hidden'>
+    <div className='w-full h-[100%]'>
         <div className={`flex justify-center max-w-full`}>
             <div className={`fixed z-20 ${styles.boxWidth}`}>
                 <Navbar/>
@@ -14,7 +14,7 @@ const App = () => (
 
         <div className={`${styles.flexCenter}`}>
             <div className={`${styles.boxWidth}`}>
-                <Hero id="starting"/>
+                <Hero/>
             </div>
         </div>
 

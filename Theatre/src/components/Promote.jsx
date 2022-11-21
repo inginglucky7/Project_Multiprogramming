@@ -154,9 +154,9 @@ const Promote = () => {
           <div id='txt-02' className='box flex justify-center'>
             <img className='scale-[0.8]' src={PMWallet} alt="wallet" />
           </div>
-          <div className='box flex justify-center'>
+          <div id='txt-02' className='box flex justify-center'>
             <img className='scale-[0.8]' src={PMPopup} alt="popup" />
-            <img className='absolute mr-[27%] mt-[7%]' src={ticket === 1 ? T1 : ticket === 2 ? T2 : ticket === 3 ? T3 : ticket === 4 ? T4 : T5} alt="ticketpic" />
+            <img className='absolute mr-[50%] mt-[15%]' src={ticket === 1 ? T1 : ticket === 2 ? T2 : ticket === 3 ? T3 : ticket === 4 ? T4 : T5} alt="ticketpic" />
             <div className='ml-16'>
               <img className='btnc w-2/12 mb-8' onClick={() => {setTicket(1)}} src={One} alt="number" />
               <img className='btnc w-2/12 mb-8' onClick={() => {setTicket(2)}} src={Two} alt="number" />
@@ -168,14 +168,14 @@ const Promote = () => {
         </div>
       </div>
 
-      <div className='sm:hidden xs:block mt-60'>
+      <div id='txt-02' className='sm:hidden xs:block mt-60'>
         <div id='txt-01' className='flex justify-center mb-20'><img className='w-8/12' src={PMText2} alt="pmtxt2" /></div>
         <div id='txt-02' className='flex justify-center mb-10'><img className='w-10/12' src={PMWallet} alt="wallet" /></div>
         <div className='flex justify-center mb-5'>
           <img className='scale-[0.75]' src={PMPopup} alt="popup" />
           <img className='absolute scale-[0.9] mt-[30%]' src={ticket === 1 ? T1 : ticket === 2 ? T2 : ticket === 3 ? T3 : ticket === 4 ? T4 : T5} alt="ticketpic" />
         </div>
-        <div className='flex justify-center -mb-8'>
+        <div id='txt-02' className='flex justify-center -mb-8'>
           <img className='btnc w-2/12 mr-2' onClick={() => {setTicket(1)}} src={One} alt="number" />
           <img className='btnc w-2/12 mr-2' onClick={() => {setTicket(2)}} src={Two} alt="number" />
           <img className='btnc w-2/12 mr-2' onClick={() => {setTicket(3)}} src={Three} alt="number" />

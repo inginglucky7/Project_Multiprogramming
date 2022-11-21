@@ -62,7 +62,8 @@ const Fahsiam = () => {
                 ease: "inOut"
             }
         );
-        gsap.to(airplane1Ref, 1, {
+        gsap.to(
+            airplane1Ref, 1, {
             scrollTrigger: {
                 trigger: airplane1Ref,
                 scrub: 1,
@@ -89,7 +90,7 @@ const Fahsiam = () => {
         gsap.to(soldierRef3, 5, {
             scrollTrigger: {
                 trigger: soldierRef3,
-                scrub: 2,
+                scrub: 1,
             },
             x: 100,
             ease: "inOut"
@@ -97,7 +98,7 @@ const Fahsiam = () => {
     }, []);
 
     return (
-        <section id="fahsiam" className="flex md:flex-col flex-col">
+        <section className="flex md:flex-col flex-col">
             <div id="image-fahsiam">
                 <div className="max-w-[100%] max-h-[100%] h-full mx-auto">
                     <div className="relative">
@@ -126,9 +127,9 @@ const Fahsiam = () => {
                     </div>
                 </div>
 
-                <div className="sm:max-w-xl md:max-w-[100%] max-h-[100%] h-auto w-[100%] mx-auto sm:mb-0 xs:max-w-sm">
+                <div id="turning_point" className="sm:max-w-xl md:max-w-[100%] max-h-[100%] h-auto w-[100%] mx-auto sm:mb-0 xs:max-w-sm">
                     <div className="relative">
-                        <h2 id="turning_point" ref={el => {turningPointRef = el}} className={`${styles.heading3Fahsiam} opacity-0 xs:relative
+                        <h2 ref={el => {turningPointRef = el}} className={`${styles.heading3Fahsiam} opacity-0 xs:relative
                         xs:pl-[10vw] xs:bottom-[14vw]
                         sm:bottom-[18vw]
                         md:bottom-[18vw]

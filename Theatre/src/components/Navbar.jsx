@@ -14,8 +14,9 @@ import {
 const Navbar = () => {
     const [toggle, setToggle] = useState(true);
 
+
     return (
-        <nav>
+        <nav id="navbar">
             <MenuIcon className='max-w-[100%] h-auto w-[100%] ml-[89vw] mt-[8vw] relative bottom-[3vw] scale-[1.5]
              md:ml-[94.2vw] md:mt-[4.8rem] lg:mt-[6.5vw] lg:ml-[95.2vw] xl:mt-[6.5rem]
              object-contain border-solid border-[#a19893] border-2 rounded'

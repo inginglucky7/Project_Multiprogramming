@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useRef} from 'react'
 import './Chaloemthai.css';
 import './Scala.css';
 // import CLTPaper from '../img/Chaloemthai/Paper.png'
@@ -18,8 +18,42 @@ import CLTTPBG from '../img/Chaloemthai/CLTTPBG.png'
 import CLTTP from '../img/Chaloemthai/CLTTP.png'
 import CLTXSPaper from '../img/Chaloemthai/PaperTxt.png'
 import * as ScalaJS from '../js/scala.js';
+import {gsap} from "gsap";
 
 const Chaloemthai = () => {
+    let carChaloemthaiRef = useRef(null);
+    let redCarChaloemthaiRef = useRef(null);
+    let iceCreamCart = useRef(null);
+
+    useEffect(() => {
+        gsap.to(carChaloemthaiRef, 1, {
+            scrollTrigger: {
+                trigger: carChaloemthaiRef,
+                scrub: 1,
+            },
+            x: 300,
+            y: 50,
+            ease: "inOut"
+        });
+        gsap.to(redCarChaloemthaiRef, 1, {
+            scrollTrigger: {
+                trigger: redCarChaloemthaiRef,
+                scrub: 1,
+            },
+            x: 200,
+            y: -60,
+            ease: "inOut"
+        });
+        gsap.to(iceCreamCart, 1, {
+            scrollTrigger: {
+                trigger: iceCreamCart,
+                scrub: 1,
+            },
+            x: -100,
+            ease: "inOut"
+        });
+    }, []);
+
   return (
     <div className='cltbody'>
       {/* <div>
@@ -44,7 +78,7 @@ const Chaloemthai = () => {
             สร้างขึ้นเมื่อราวปี พ.ศ. 2483 </p>
         </div>
         <div className='xs:mt-36 sm:mt-0'><img className='absolute sm:scale-100 xs:scale-150' src={CLTBuilding} alt="building" /></div>
-        <div className='xs:mt-36 sm:mt-0'><img className='absolute sm:scale-100 xs:scale-150' src={CLTCar} alt="car" /></div>
+        <div className='xs:mt-36 sm:mt-0'><img ref={el => (carChaloemthaiRef = el)} className='absolute sm:scale-100 xs:scale-150' src={CLTCar} alt="car" /></div>
         <div className='xs:mt-36 sm:mt-0'><img className='sm:scale-100 xs:scale-150' src={CLTBG} alt="cltbg" /></div>
       </div>
 
@@ -104,8 +138,8 @@ const Chaloemthai = () => {
           <p id='txt-01' className='text-lg'>ไอศกรีม มาแล้วจ้าาาา</p>
         </div>
         <div><img className='absolute sm:scale-100 xs:scale-150' src={CLTRoad} alt="road" /></div>
-        <div><img className='absolute sm:scale-100 xs:scale-150' src={CLTRedCar} alt="redcar" /></div>
-        <div><img className='absolute sm:scale-100 xs:scale-150' src={CLTITIM} alt="itim" /></div>
+        <div><img ref={el => (redCarChaloemthaiRef = el)} className='absolute sm:scale-100 xs:scale-150' src={CLTRedCar} alt="redcar" /></div>
+        <div><img ref={el => (iceCreamCart = el)} className='absolute sm:scale-100 xs:scale-150' src={CLTITIM} alt="itim" /></div>
         <div><img className='absolute sm:scale-100 xs:scale-150' src={CLTLights} alt="lights" /></div>
         <div><img className='lights absolute sm:scale-100 xs:scale-150' src={CLT2L} alt="twol" /></div>
 
