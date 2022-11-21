@@ -30,13 +30,13 @@ const Promote = () => {
   return (
     <div className='promotebody'>
 
-      <div className='xs:hidden sm:block'>
+      <div id="promote" className='xs:hidden sm:block'>
         <img className='absolute scale-100' src={PMRollPaper} alt="pmpaper" />
         <img id='txt-01' className='absolute scale-100' src={PMText} alt="pmtxt" />
         <img className='scale-100' src={PMRollPaperBG} alt="pmpaperbg" />
       </div>
 
-      <div className='sm:hidden xs:block'>
+      <div id="promote" className='sm:hidden xs:block'>
         <img className='absolute scale-100' src={PMMobilePaper} alt="pmpaper" />
         <img id='txt-01' className='absolute scale-100' src={PMMobileTXT} alt="pmtxt" />
         <img className='scale-100' src={PMMobileBG} alt="pmpaperbg" />
@@ -148,7 +148,7 @@ const Promote = () => {
         </div>
       </div>
 
-      <div className='xs:hidden sm:block mt-80'>
+      <div id="ticket" className='xs:hidden sm:block mt-80'>
         <div id='txt-01' className='flex justify-center mb-32'><img className='w-3/12' src={PMText2} alt="pmtxt2" /></div>
         <div className='grid grid-cols-2 grid-rows-1'>
           <div id='txt-02' className='box flex justify-center'>
@@ -168,7 +168,7 @@ const Promote = () => {
         </div>
       </div>
 
-      <div className='sm:hidden xs:block mt-60'>
+      <div id="ticket" className='sm:hidden xs:block mt-60'>
         <div id='txt-01' className='flex justify-center mb-20'><img className='w-8/12' src={PMText2} alt="pmtxt2" /></div>
         <div id='txt-02' className='flex justify-center mb-10'><img className='w-10/12' src={PMWallet} alt="wallet" /></div>
         <div className='flex justify-center mb-5'>

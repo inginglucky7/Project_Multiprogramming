@@ -42,8 +42,8 @@ const Scala = () => {
   }, []);
 
   return (
-    <div id="scala" className='body'>
-      <div className='flex justify-center xs:mx-16 sm:mx-8'>
+    <div className='body'>
+      <div id="scala" className='flex justify-center xs:mx-16 sm:mx-8'>
         <img id='txt-01' className='logo sm:mt-60 xs:mt-40' src={ScalaLogo} alt="logo" />
       </div>
       <div className='flex justify-center text-center xs:mx-20 mt-32 mb-44 sm:my-20'>
