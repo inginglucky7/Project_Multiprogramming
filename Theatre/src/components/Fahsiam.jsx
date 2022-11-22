@@ -26,6 +26,7 @@ const Fahsiam = () => {
                 },
                 opacity :1,
                 y:-50,
+                lazy: true,
                 ease: "inOut"
             }
         );
@@ -37,6 +38,7 @@ const Fahsiam = () => {
                 },
                 opacity :1,
                 y:-50,
+                lazy: true,
                 ease: "inOut"
             }
         );
@@ -48,7 +50,8 @@ const Fahsiam = () => {
                 },
                 opacity :1,
                 y:-50,
-                ease: "inOut"
+                lazy: true,
+                ease: "power2"
             }
         );
         gsap.to(
@@ -59,6 +62,7 @@ const Fahsiam = () => {
                 },
                 opacity :1,
                 y:-50,
+                lazy: true,
                 ease: "inOut"
             }
         );
@@ -68,8 +72,9 @@ const Fahsiam = () => {
                 trigger: airplane1Ref,
                 scrub: 1,
             },
-            x: 500,
-            ease: "inOut"
+            x: "30vw",
+            lazy: true,
+            ease: "power2"
         });
         gsap.to(soldierRef1, 2, {
             scrollTrigger: {
@@ -77,6 +82,7 @@ const Fahsiam = () => {
                 scrub: 1,
             },
             x: "20vw",
+            lazy: true,
             ease: "inOut"
         });
         gsap.to(soldierRef2, 5, {
@@ -85,6 +91,7 @@ const Fahsiam = () => {
                 scrub: 1,
             },
             x: "10vw",
+            lazy: true,
             ease: "inOut"
         });
         gsap.to(soldierRef3, 5, {
@@ -93,6 +100,7 @@ const Fahsiam = () => {
                 scrub: 1,
             },
             x: 100,
+            lazy: true,
             ease: "inOut"
         });
     }, []);
@@ -104,17 +112,17 @@ const Fahsiam = () => {
                     <div className="relative">
                         <FahSiamPicture className={`z-10`} />
                         <div className="mix-blend-difference z-0">
-                            <img className="absolute top-[55vw] sm:hidden md:hidden lg:hidden" src="https://cdn.discordapp.com/attachments/1031263201763016704/1036032069177978990/2_2.png"/>
-                            <img id="turning_point" className="absolute top-[70vw] xs:hidden sm:block" src="https://cdn.discordapp.com/attachments/1031263201763016704/1031371918642782219/i.png"/>
+                            <img className="absolute top-[55vw] sm:hidden md:hidden lg:hidden lazy" src="https://cdn.discordapp.com/attachments/1031263201763016704/1036032069177978990/2_2.png"/>
+                            <img className="absolute top-[70vw] xs:hidden sm:block lazy" src="https://cdn.discordapp.com/attachments/1031263201763016704/1031371918642782219/i.png"/>
                         </div>
                     </div>
                 </div>
 
                 <div id="airplane_container" className="max-w-[100%] max-h-[100%] h-auto mx-auto">
                     <div className="relative">
-                        <img ref={el => {airplane1Ref = el}} src="https://cdn.discordapp.com/attachments/1031263201763016704/1036627864428236901/1.png"
+                        <img id="turning_point" ref={el => {airplane1Ref = el}} src="https://cdn.discordapp.com/attachments/1031263201763016704/1036627864428236901/1.png"
                              className="absolute h-auto w-[100%] max-w-[36vw]
-                             xs:bottom-[46vw] xs:left-[5vw]
+                             xs:bottom-[46vw] xs:left-[2vw]
                              sm:bottom-[34vw]
                              xl:bottom-[37vw] xl:pl-[5vw] " alt="airplane1Xl"/>
                         <img src="https://cdn.discordapp.com/attachments/1031263201763016704/1036627863983636550/2.png"
@@ -133,7 +141,7 @@ const Fahsiam = () => {
                         xs:pl-[10vw] xs:bottom-[14vw]
                         sm:bottom-[18vw]
                         md:bottom-[18vw]
-                        xl:pl-[40vw] xl:bottom-[29.5vw]`}>จุดเปลี่ยน</h2>
+                        xl:pl-[39.5vw] xl:bottom-[29.5vw]`}>จุดเปลี่ยน</h2>
                         <p ref={el => {turningPointInfoRef1 = el}} className={`${styles.paragraph} opacity-0 z-10 xs:relative sm:absolute
                         xs:pl-[0%] xs:mx-[10%] xs:bottom-[5vw] 
                         sm:bottom-[45vw] sm:pl-[1vw]
@@ -163,27 +171,27 @@ const Fahsiam = () => {
                 <div className="xs:bottom-0 sm:pb-[55vw] md:pb-[20vw] xl:pb-[50vw] max-w-[100%] h-full w-[100%]">
                     <div className="relative max-w-[100%] h-auto w-[100%]">
                         <img src="https://cdn.discordapp.com/attachments/1031263201763016704/1031371918131073055/1651bf59ec5b8680.png"
-                             className="mix-blend-multiply sm:absolute md:relative sm:flex z-[0]
+                             className="lazy mix-blend-multiply sm:absolute md:relative sm:flex z-[0]
                              sm:bottom-[-54vw]
                              md:bottom-[-20vw]
                              xl:absolute
                              xl:bottom-[-55vw] max-w-[100%] h-auto w-[100%]" alt="ruin"/>
                         <img ref={el => {soldierRef1 = el}} src="https://cdn.discordapp.com/attachments/1031263201763016704/1036676987571404811/2_1.png"
-                             className="z-[1] absolute max-w-[42%] h-auto w-[100%]
+                             className="lazy z-[1] absolute max-w-[42%] h-auto w-[100%]
                              xs:pl-[6%] xs:top-[29vw] xs:left-[20vw]
                              sm:top-[16vw]
                              md:top-[50vw]
                              lg:top-[50vw]
                              xl:pt-[22%] xl:pl-[22%] xl:top-[0vw] xl:left-[0vw]" alt="soldier1"/>
                         <img ref={el => {soldierRef2 = el}} src="https://cdn.discordapp.com/attachments/1031263201763016704/1036676988011823124/3.png"
-                             className="absolute z-[1] max-w-[38%] h-auto w-[100%]
+                             className="lazy absolute z-[1] max-w-[38%] h-auto w-[100%]
                              xs:top-[22vw] xs:left-[0vw]
                              sm:block sm:top-[16vw]
                              md:top-[50vw]
                              lg:top-[40vw]
                              xl:pt-[15%] xl:pl-[16%] xl:top-[0vw] xl:left-[0vw]" alt="soldier2"/>
                         <img ref={el => {soldierRef3 = el}} src="https://cdn.discordapp.com/attachments/1031263201763016704/1036677029833220096/1_1.png"
-                             className="z-[1] max-w-[73vw] h-auto w-[100%] absolute
+                             className="lazy z-[1] max-w-[73vw] h-auto w-[100%] absolute
                              xs:hidden
                              sm:hidden
                              md:hidden
@@ -191,7 +199,7 @@ const Fahsiam = () => {
                              xl:block xl:top-[23vw]
                              xl:pl-[57%] xl:" alt="soldier3"/>
                         <img src="https://cdn.discordapp.com/attachments/1031263201763016704/1036676987214909560/1.png"
-                             className="z-[2] absolute xs:top-[58vw]
+                             className="lazy z-[2] absolute xs:top-[58vw]
                              sm:top-[43vw]
                              md:top-[78vw]
                              xl:top-[40vw]

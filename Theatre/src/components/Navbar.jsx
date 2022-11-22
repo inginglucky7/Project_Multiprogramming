@@ -19,8 +19,8 @@ import {
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(true);
-    const scrollToScala = (link) => {
-        gsap.to(window, {duration:3, scrollTo:{y:`#${link}`, offsetY:50, autoKill: true}, ease: "power3"})
+    const scrollToFunc = (link) => {
+        gsap.to(window, {duration:2, ease: "power2", scrollTo:{y:`#${link}`, autoKill: true}})
     };
 
     return (
@@ -61,7 +61,7 @@ const Navbar = () => {
                                 key={index}
                                 onClick={() => {
                                     setToggle(!toggle);
-                                    scrollToScala(`#${nav.id}`);
+                                    scrollToFunc(e);
                                 }}
                                 style={{
                                     width: "100%",

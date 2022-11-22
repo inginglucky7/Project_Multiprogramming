@@ -1,10 +1,8 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import {Chaloemkrung, Chaloemthai, Footer, Hero, Lido, Navbar, Promote, Scala, Fahsiam} from "./components";
 import styles from './style';
 
 const App = () => (
-
     <div className='w-full h-[100%]'>
         <div className={`flex justify-center max-w-full`}>
             <div className={`fixed z-20 ${styles.boxWidth}`}>
