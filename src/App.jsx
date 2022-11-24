@@ -1,6 +1,6 @@
 import React from 'react';
-import {Chaloemkrung, Chaloemthai, Footer, Hero, Lido, Navbar, Promote, Scala, Fahsiam} from "./components";
-import styles from './style';
+import {Chaloemkrung, Chaloemthai, Footer, Hero, Lido, Navbar, Promote, Scala, Fahsiam} from "./components/index.js";
+import styles from './style.js';
 
 const App = () => (
     <div className='w-full h-[100%]'>

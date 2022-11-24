@@ -1,5 +1,5 @@
 import React, {useEffect, useRef} from 'react'
-import { navLinks } from '../constants';
+import { navLinks } from '../constants/index.js';
 import { useState } from 'react';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import MenuIcon from '@mui/icons-material/Menu';

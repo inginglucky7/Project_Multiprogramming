@@ -1,5 +1,5 @@
 import React, {useRef, useEffect, useState} from 'react'
-import styles from '../style';
+import styles from '../style.js';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
